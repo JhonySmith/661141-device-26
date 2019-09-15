@@ -8,20 +8,36 @@
 
 <body>
     <header>
-        <h1>Интернет-магазин Device</h1>
+        <h1 class="visually-hidden">Интернет-магазин Device</h1>
         <nav>
-            <a href="index.html">
-                <img src="img/logo-device.svg" width="165" height="35" alt="Логотип Device»">
-            </a>
-            <p><img src="img/search.svg" width="16" height="16" alt="Поиск">Поиск по сайту</p>
+            <img src="img/logo-device.svg" width="165" height="35" alt="Логотип Device»">
+            <form>
+                <p>
+                    <img src="img/search.svg" width="16" height="16" alt="Поиск">
+                    <input id="site-search" type="search" name="site-search" placeholder="Поиск по сайту">
+                    <input type="submit" value="Найти">
+                </p>
+            </form>
             <ul>
-                <!--Вероятно картинки стилизуются в будущем по другому, но с учетом задания, пока что так -->
                 <li><a href="#"><img src="img/user.svg" alt="Войти">Войти</a></li>
                 <li><a href="#"><img src="img/compare.svg" alt="Сравнить">Сравнить</a></li>
                 <li><a href="#"><img src="img/cart.svg" alt="Корзина">Корзина</a></li>
             </ul>
             <ul>
-                <li><a href="#">КАТАЛОГ ТОВАРОВ<img src="img/plus.svg" width="16" height="16" alt="Плюс"></a></li>
+                <li><a href="#">КАТАЛОГ ТОВАРОВ<img src="img/plus.svg" width="16" height="16" alt="Плюс"></a>
+                    <ul>
+                        <li><a href="#">Виртуальная реальность</a></li>
+                        <li><a href="catalog.html">Моноподы для селфи</a></li>
+                        <li><a href="#">Экшн-камеры</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Фитнес-браслеты</a></li>
+                        <li><a href="#">Умные часы</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Квадрокоптеры</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">ДОСТАВКА</a></li>
                 <li><a href="#">ГАРАНТИЯ</a></li>
                 <li><a href="#">КОНТАКТЫ</a></li>
@@ -31,7 +47,7 @@
 
     <main>
         <section>
-            <h2>Крутые товары</h2>
+            <h2 class="visually-hidden">Крутые товары</h2>
             <ul>
                 <li>
                     <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
@@ -87,7 +103,7 @@
 
         </section>
         <section>
-            <h2>Группы товаров</h2>
+            <h2 class="visually-hidden">Группы товаров</h2>
             <ul>
                 <li><a href="#">
                         <h3>Виртуальная реальность</h3><img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
@@ -110,7 +126,7 @@
             </ul>
         </section>
         <section>
-            <h2>Доставка, гарантия, кредит</h2>
+            <h2 class="visually-hidden">Доставка, гарантия, кредит</h2>
             <!--Что то мне подсказывает, что это форма с радиобоксом, но пока будет список из ссылок-->
             <ul>
                 <li><a href="#">Доставка</a></li>
@@ -137,7 +153,7 @@
 
         </section>
         <section>
-            <h2>Производители</h2>
+            <h2 class="visually-hidden">Производители</h2>
             <ul>
                 <li><img src="img/logo-1.png" width="260" height="100" alt="DJI"></li>
                 <li><img src="img/logo-2.png" width="260" height="100" alt="SP Gadgets"></li>
@@ -189,6 +205,23 @@
         <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
         <a href="https://htmlacademy.ru"><img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy"></a>
     </footer>
+    <img src="img/map-big.png" width="960" height="559" alt="Адрес офиса на карте">
+    <form action="">
+        <p>
+            <label for="client-name">Ваше имя:</label>
+            <input id="client-name" type="text" name="client-name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+            <label for="client-email">Ваш e-mail:</label>
+            <input id="client-email" type="text" name="client-email" placeholder="email@example.com">
+        </p>
+        <p>
+            <label for="letter-text">Текст письма:</label>
+            <input id="letter-text" type="text" name="letter-text" placeholder="В свободной форме">
+        </p>
+        <button type="submit">ОТПРАВИТЬ</button>
+    </form>
+    <button type="button">Закрыть</button>
 
 </body>
 
