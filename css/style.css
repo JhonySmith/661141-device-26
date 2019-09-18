@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Gilroylight.ttf");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/Gilroyextrabold.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: lighter;
+    src: url("../fonts/OpenSans-Light.ttf");
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.nav-official li {
+    list-style: none;
+}
+
+.nav-official a {
+    font-family: "Open Sans";
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.01em;
+}
+
+.user-in::before {
+    content: url("../img/user.svg");
+    margin-right: 15px;
+}
+
+.comparison::before {
+    content: url("../img/compare.svg");
+    margin-right: 10px;
+}
+
+.cart::before {
+    content: url("../img/cart.svg");
+    margin-right: 12px;
+}
+
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-menu a {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    color: black;
+    letter-spacing: 0.2em;
+}
+
+
+.drop-menu ul a {
+    font-family: "Open Sans";
+    font-weight: lighter;
+    font-size: 15px;
+    text-transform: none;
+    letter-spacing: 0.01em;
+}
+
+
+.drop-head::after {
+    content: url("../img/plus.svg");
+    margin-left: 12px;
+    opacity: 0.3;
+}
+
+.main-goods li {
+    list-style: none;
+}
+
+.main-goods b {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 47px;
+    line-height: 56px;
+    letter-spacing: 0.01em;
+}
+
+.main-goods p {
+    font-family: "Open Sans";
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 30px;
+    color: #464646;
+}
+
+.main-goods a {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 0.2em;
+}
+
+.main-goods table {
+    border-color: white;
+}
+
+.main-goods td {
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 36px;
+    color: black;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.main-goods th {
+    padding-right: 80px;
+    font-family: "Open Sans";
+    font-weight: lighter;
+    font-size: 13px;
+    color: black;
+    letter-spacing: 0.01em;
+}
