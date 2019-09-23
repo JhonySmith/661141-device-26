@@ -52,70 +52,75 @@
     </header>
 
     <main>
-        <section class="main-goods">
+        <section class="main-products fixed">
             <h2 class="visually-hidden">Крутые товары</h2>
             <ul>
-                <li>
+                <li class="main-product product-1">
                     <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
-                    <b>
-                        Делай селфи,<br>
-                        как Бен Стиллер!
-                    </b>
-                    <p>Самая длинная палка для селфи доступна в нашем магазине.
-                        Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                    <div class="bg">
+                    <div class="product-description">
+
+                        <b>
+                            Делай селфи,<br>
+                            как Бен Стиллер!
+                        </b>
+                        <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
+                            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                         <a href="#">ПОДРОБНЕЕ</a>
+                        <table>
+                            <tr>
+                                <td>8,5 м</td>
+                                <td>5 кг</td>
+                                <td>Карбон</td>
+                            </tr>
+                            <tr>
+                                <th>Длина палки</th>
+                                <th>Вес палки</th>
+                                <th>Материал</th>
+
+                            </tr>
+                        </table>
                     </div>
-                    <table>
-                        <tr>
-                            <td>8,5 м</td>
-                            <td>5 кг</td>
-                            <td>Карбон</td>
-                        </tr>
-                        <tr>
-                            <th>Длина палки</th>
-                            <th>Вес палки</th>
-                            <th>Материал</th>
-
-                        </tr>
-                    </table>
                 </li>
-                <li>
+                <li class="main-product product-2">
                     <img src="img/slider-2.png" widht="345" height="485" alt="Фитнес браслет">
-                    <b>Худеем правильно!</b>
-                    <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
-                        не пропускать занятия и соблюдать диету.</p>
-                    <a href="#">ПОДРОБНЕЕ</a>
-                    <table>
-                        <tr>
-                            <td>48 часов</td>
-                        </tr>
-                        <tr>
-                            <th>Без подзарядки</th>
+                    <div class="product-description">
+                        <b>Худеем<br> правильно!</b>
+                        <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+                            не пропускать занятия и соблюдать диету.</p>
+                        <a href="#">ПОДРОБНЕЕ</a>
+                        <table>
+                            <tr>
+                                <td>48 часов</td>
+                            </tr>
+                            <tr>
+                                <th>Без подзарядки</th>
 
-                        </tr>
-                    </table>
+                            </tr>
+                        </table>
+                    </div>
                 </li>
-                <li>
+                <li class="main-product product-3">
                     <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
-                    <b>Порхает как бабочка, жалит как пчела!</b>
-                    <p>Это обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                    <a href="#">ПОДРОБНЕЕ</a>
-                    <table>
-                        <tr>
-                            <td>800 м</td>
-                            <td>50 м</td>
-                        </tr>
-                        <tr>
-                            <th>Дальность полета</th>
-                            <th>Радиус поражения</th>
-                        </tr>
-                    </table>
+                    <div class="product-description">
+                        <b>Порхает как бабочка, жалит как пчела!</b>
+                        <p>Это обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                        <a href="#">ПОДРОБНЕЕ</a>
+                        <table>
+                            <tr>
+                                <td>800 м</td>
+                                <td>50 м</td>
+                            </tr>
+                            <tr>
+                                <th>Дальность полета</th>
+                                <th>Радиус поражения</th>
+                            </tr>
+                        </table>
+                    </div>
                 </li>
             </ul>
 
         </section>
-        <section>
+        <section class="fixed">
             <h2 class="visually-hidden">Группы товаров</h2>
             <ul class="groups-items">
                 <li><a href="#">
@@ -125,7 +130,7 @@
                         </div>
                     </a></li>
                 <li><a href="catalog.html">
-                        <h3>Моноподы для селфи</h3>
+                        <h3>Моноподы<br> для селфи</h3>
                         <div class="groups-img">
                             <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
                         </div>
@@ -156,34 +161,48 @@
                     </a></li>
             </ul>
         </section>
-        <section>
-            <h2 class="visually-hidden">Доставка, гарантия, кредит</h2>
-            <!--Что то мне подсказывает, что это форма с радиобоксом, но пока будет список из ссылок-->
-            <ul>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Гарантия</a></li>
-                <li><a href="#">Кредит</a></li>
-            </ul>
-            <ul>
-                <li>
-                    <h3>Доставка</h3>
-                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                    <img src="img/delivery.svg" width="136" height="164" alt="Доставка">
-                </li>
-                <li>
-                    <h3>Гарантия</h3>
-                    <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-                    <img src="img/warranty.svg" widht="171" height="194" alt="Гарантия">
-                </li>
-                <li>
-                    <h3>Кредит</h3>
-                    <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-                    <img src="img/credit.svg" width="156" height="186" alt="Кредит">
-                </li>
-            </ul>
+        <div class="info-bg">
+            <section class="fixed info">
 
-        </section>
-        <section class="brands">
+                <h2 class="visually-hidden">Доставка, гарантия, кредит</h2>
+                <form action="submit">
+                    <input type="radio" id="delivery" name="slider-info" value="delivery" checked>
+                    <label for="delivery">Доставка</label>
+
+                    <input type="radio" id="warranty" name="slider-info" value="warranty">
+                    <label for="warranty">Гарантия</label>
+
+                    <input type="radio" id="credit" name="slider-info" value="credit">
+                    <label for="credit">Кредит</label>
+                </form>
+                <ul>
+                    <li class="delivery">
+                        <div class="info-text">
+                            <h3>Доставка</h3>
+                            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                        </div>
+                        <img src="img/delivery.svg" width="136" height="164" alt="Доставка">
+                    </li>
+                    <li class="warranty">
+                        <div class="info-text">
+                            <h3>Гарантия</h3>
+                            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                        </div>
+                        <img src="img/warranty.svg" widht="171" height="194" alt="Гарантия">
+
+                    </li>
+                    <li class="credit">
+                        <div class="info-text">
+                            <h3>Кредит</h3>
+                            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                        </div>
+                        <img src="img/credit.svg" width="156" height="186" alt="Кредит">
+                    </li>
+                </ul>
+
+            </section>
+        </div>
+        <section class="brands fixed">
             <h2 class="visually-hidden">Производители</h2>
             <ul>
                 <li><img src="img/logo-1.png" width="260" height="100" alt="DJI"></li>

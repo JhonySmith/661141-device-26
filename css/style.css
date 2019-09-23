@@ -68,6 +68,7 @@ nav {
     padding-top: 50px;
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 60px;
 }
 
 .drop-menu {
@@ -132,6 +133,7 @@ nav {
     font-family: "Open Sans";
     text-transform: none;
     letter-spacing: 0.01em;
+    display: none;
 }
 
 
@@ -141,11 +143,11 @@ nav {
     opacity: 0.3;
 }
 
-.main-goods li {
+.main-products li {
     list-style: none;
 }
 
-.main-goods b {
+.main-products b {
     font-family: 'Gilroy';
     font-weight: bold;
     font-size: 47px;
@@ -153,15 +155,16 @@ nav {
     letter-spacing: 0.01em;
 }
 
-.main-goods p {
+.main-products p {
     font-family: "Open Sans";
     font-weight: lighter;
     font-size: 15px;
     line-height: 30px;
     color: #464646;
+    margin-bottom: 60px;
 }
 
-.main-goods a {
+.main-products a {
     font-family: 'Gilroy';
     font-weight: bold;
     font-size: 18px;
@@ -170,15 +173,19 @@ nav {
     color: black;
     letter-spacing: 0.2em;
     background-clip: border-box;
+    padding-left: 43px;
+    padding-right: 43px;
+    background: linear-gradient(to bottom, white 30%, #f0c52e 30%, #f0c52e 70%, white 70%);
 
 
 }
 
-.main-goods table {
+.main-products table {
+    margin-top: 60px;
     border-color: white;
 }
 
-.main-goods td {
+.main-products td {
     font-family: 'Gilroy';
     font-weight: normal;
     font-size: 36px;
@@ -187,7 +194,7 @@ nav {
     text-align: left;
 }
 
-.main-goods th {
+.main-products th {
     padding-right: 80px;
     font-family: "Open Sans";
     font-weight: lighter;
@@ -207,17 +214,26 @@ div.groups-img {
 
 .groups-items li {
     list-style: none;
+    width: 160px;
 }
 
-.groups-items a {
+.groups-items h3 {
     font-family: 'Gilroy';
     font-weight: bold;
     font-size: 18px;
-    text-decoration: none;
     color: black;
     line-height: 24px;
     letter-spacing: 0.01em;
+    padding: 0;
+    margin-top: 35px;
 }
+
+.groups-items a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 
 .bg {
     background-color: #f0c52e;
@@ -306,4 +322,148 @@ div.groups-img {
 
 .footer-nav li {
     list-style: none;
+}
+
+.main-products ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+.main-product {
+    display: flex;
+    padding-left: 90px;
+}
+
+.product-1 {
+    background:
+        url(../img/01.png) no-repeat 90% 5%,
+        linear-gradient(to bottom, #f7e296 25%, white 25%);
+}
+
+.product-2 {
+    display: none;
+    background:
+        url(../img/02.png) no-repeat 90% 5%,
+        linear-gradient(to bottom, #f7e296 25%, white 25%);
+}
+
+.product-3 {
+    display: none;
+    background:
+        url(../img/03.png) no-repeat 90% 5%,
+        linear-gradient(to bottom, #f7e296 25%, white 25%);
+}
+
+.product-description {
+    margin-left: 120px;
+    padding-top: 90px;
+}
+
+.groups-items {
+    padding: 0;
+    margin: 0;
+    margin-top: 105px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.info {
+    display: flex;
+    margin-top: 70px;
+    padding-bottom: 70px;
+}
+
+.info form {
+    display: flex;
+    flex-direction: column;
+    width: 277px;
+    padding-top: 80px;
+}
+
+.info input[type="radio"] {
+    display: none;
+}
+
+.info input[type="radio"]:checked + label {
+    background: black;
+    color: #f7e184;
+}
+
+.info input[type="radio"] + label {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Gilroy';
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 0.2em;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    margin-bottom: 25px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, #f0c52e 40%, #f0c52e 60%, rgba(255, 255, 255, 0) 60%);
+}
+
+
+
+.info img {
+    margin-left: 105px;
+    padding-top: 100px;
+}
+
+.info ul {
+    margin: 0;
+    padding: 0;
+}
+
+.info li {
+    list-style: none;
+    display: flex;
+
+}
+
+.info p {
+    font-family: "Open Sans";
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 30px;
+    color: #464646;
+}
+
+.info-text {
+    width: 437px;
+    padding-left: 115px;
+    padding-top: 70px;
+    border-left: 7px solid black;
+}
+
+.info h3 {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 47px;
+    color: black;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+li.warranty {
+    display: none;
+}
+
+li.credit {
+    display: none;
+}
+
+div.info-bg {
+    background: linear-gradient(to bottom, white 29%, #e5e5e5 29%)
+}
+
+.brands ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    margin-top: 100px;
 }
