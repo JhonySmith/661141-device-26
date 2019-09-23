@@ -33,32 +33,81 @@
     overflow: hidden;
 }
 
+.fixed {
+    margin: 0 auto;
+    width: 1160px;
+}
+
+/*--------Хедэр------------*/
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7e296;
+    padding-top: 33px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.nav-official {
+    display: flex;
+    margin: 0;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    background-color: #f7e296;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.drop-menu {
+    margin-right: 325px;
+}
 
 .nav-official li {
     list-style: none;
 }
 
+.logo {
+    background: linear-gradient(to bottom, white 50%, #f7e296 50%);
+    margin-top: 32px;
+    padding-left: 60px;
+}
+
 .nav-official a {
-    font-family: "Open Sans";
     font-size: 15px;
+    letter-spacing: 0.01em;
+    font-family: "Open Sans";
     text-decoration: none;
     color: black;
-    letter-spacing: 0.01em;
 }
 
 .user-in::before {
     content: url("../img/user.svg");
     margin-right: 15px;
+
 }
 
 .comparison::before {
     content: url("../img/compare.svg");
     margin-right: 10px;
+    margin-left: 218px;
 }
 
 .cart::before {
     content: url("../img/cart.svg");
     margin-right: 12px;
+    margin-left: 40px;
 }
 
 .nav-menu li {
@@ -66,21 +115,21 @@
 }
 
 .nav-menu a {
-    font-family: 'Gilroy';
-    font-weight: bold;
     font-size: 18px;
+    font-weight: bold;
+    font-family: 'Gilroy';
     text-decoration: none;
     text-transform: uppercase;
     list-style: none;
-    color: black;
     letter-spacing: 0.2em;
+    color: black;
 }
 
 
 .drop-menu ul a {
-    font-family: "Open Sans";
-    font-weight: lighter;
     font-size: 15px;
+    font-weight: lighter;
+    font-family: "Open Sans";
     text-transform: none;
     letter-spacing: 0.01em;
 }
@@ -174,4 +223,87 @@ div.groups-img {
     background-color: #f0c52e;
     height: 8px;
     width: 220px;
+}
+
+.about h2 {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 47px;
+}
+
+.about p {
+    font-family: "Open Sans";
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 30px;
+    color: #464646;
+}
+
+.about li {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.about a {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    color: black;
+    letter-spacing: 0.2em;
+}
+
+.contacts h2 {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 47px;
+}
+
+.contacts p {
+    font-family: "Open Sans";
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 30px;
+    color: #464646;
+}
+
+.contacts a {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    color: black;
+    letter-spacing: 0.2em;
+}
+
+.brands li {
+    list-style: none;
+}
+
+.footer-nav-official a {
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    font-family: "Open Sans";
+    text-decoration: none;
+    color: black;
+}
+
+.footer-nav a {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Gilroy';
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    letter-spacing: 0.2em;
+    color: white;
+}
+
+.footer-nav li {
+    list-style: none;
 }
