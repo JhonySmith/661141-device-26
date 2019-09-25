@@ -608,18 +608,31 @@ a.phone {
 
 /*--------Catalog.index------------*/
 
-h1.monopods {
+.head {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
     font-size: 47px;
     font-weight: bold;
     font-family: 'Gilroy';
     letter-spacing: 0.01em;
+    margin: 0;
+    margin-top: 32px;
+    margin-left: 60px;
+
 }
 
-.bread-crumbs {
+.head ul {
     display: flex;
+    padding: 0;
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
-.bread-crumbs li {
+.head li {
     list-style: none;
     font-family: "Open Sans";
     font-weight: lighter;
@@ -627,7 +640,7 @@ h1.monopods {
     color: #e5e5e5;
 }
 
-.bread-crumbs a {
+.head a {
     text-decoration: none;
     font-family: "Open Sans";
     font-weight: lighter;
@@ -635,14 +648,18 @@ h1.monopods {
     color: #e5e5e5;
 }
 
+.content-bg {
+    background: url("../img/bg-catalog.png") no-repeat;
+    width: 1440px;
+    margin: 0 auto;
+}
+
 .contents {
     display: flex;
-    padding-left: 60px;
 }
 
 .contents h2 {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 26px;
     margin: 0;
     font-size: 16px;
     font-weight: bold;
@@ -658,8 +675,13 @@ h1.monopods {
     border-top: 2px solid black;
 }
 
+.filters {
+    margin-left: 60px;
+}
+
 .filters form {
     margin-top: 69px;
+    width: 200px;
 }
 
 .filters ul {
@@ -733,11 +755,16 @@ h1.monopods {
     margin-bottom: 69px;
 }
 
+.sorting h2 {
+    margin-left: 140px;
+}
+
 .sorting ul {
     display: flex;
     align-items: center;
     padding: 0;
     margin: 0;
+    margin-top: 25px;
     margin-left: 20px;
 }
 
@@ -757,4 +784,49 @@ h1.monopods {
 
 a.active-sort {
     color: black;
+}
+
+.list-items ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.list-items li {
+    list-style: none;
+}
+
+
+.list-items li:nth-child(2n-1) {
+    padding-right: 40px;
+}
+
+.item a {
+    display: flex;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    color: black;
+}
+
+.item-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Gilroy';
+    letter-spacing: 0.01em;
+    margin: 0;
+    padding: 0;
+}
+
+.item span {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Gilroy';
+    letter-spacing: 0.01em;
+    color: #464646;
 }
