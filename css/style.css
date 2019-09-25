@@ -20,6 +20,13 @@
 
 }
 
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -626,4 +633,128 @@ h1.monopods {
     font-weight: lighter;
     font-size: 14px;
     color: #e5e5e5;
+}
+
+.contents {
+    display: flex;
+    padding-left: 60px;
+}
+
+.contents h2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Gilroy';
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.price-range,
+.filter-color,
+.filter-bth {
+    padding-top: 15px;
+    border-top: 2px solid black;
+}
+
+.filters form {
+    margin-top: 69px;
+}
+
+.filters ul {
+    margin: 0;
+    padding: 0;
+}
+
+.filters li {
+    padding-bottom: 10px;
+    list-style: none;
+    font-family: "Open Sans";
+    font-weight: lighter;
+    font-size: 14px;
+    color: black;
+}
+
+.price-range label {
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Gilroy';
+    letter-spacing: 0.01em;
+}
+
+.filters fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filters legend {
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Gilroy';
+    letter-spacing: 0.01em;
+}
+
+.filter-color label {
+    display: flex;
+    align-items: center;
+}
+
+.filter-color input[type="checkbox"] + label::before {
+    content: url("../img/checkbox-off.svg");
+    margin-right: 18px;
+}
+
+.filter-color input[type="checkbox"]:checked + label::before {
+    content: url("../img/checkbox-on.svg");
+    margin-right: 14px;
+}
+
+.filter-bth label {
+    display: flex;
+    align-items: center;
+}
+
+.filter-bth input[type="radio"] + label::before {
+    content: url("../img/radio-off.svg");
+    margin-right: 15px;
+}
+
+.filter-bth input[type="radio"]:checked + label::before {
+    content: url("../img/radio-on.svg");
+    margin-right: 15px;
+}
+
+.sorting {
+    display: flex;
+    margin-bottom: 69px;
+}
+
+.sorting ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.sorting li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.sorting a {
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #bababa;
+}
+
+a.active-sort {
+    color: black;
 }
