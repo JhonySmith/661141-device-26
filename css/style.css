@@ -57,7 +57,7 @@
     display: flex;
     justify-content: space-between;
     background-color: #f7e296;
-    padding-top: 33px;
+    padding-top: 28px;
     padding-left: 60px;
     padding-right: 60px;
 }
@@ -480,6 +480,9 @@ section.contacts::before {
 }
 
 .about a {
+    display: block;
+    width: 260px;
+    text-align: center;
     font-family: 'Gilroy';
     font-weight: bold;
     font-size: 18px;
@@ -488,6 +491,8 @@ section.contacts::before {
     list-style: none;
     color: black;
     letter-spacing: 0.2em;
+    background: linear-gradient(to bottom, white 30%, #f0c52e 30%, #f0c52e 70%, white 70%);
+
 }
 
 .contacts {
@@ -510,6 +515,9 @@ section.contacts::before {
 }
 
 .contacts a {
+    display: block;
+    width: 260px;
+    text-align: center;
     font-family: 'Gilroy';
     font-weight: bold;
     font-size: 18px;
@@ -518,6 +526,7 @@ section.contacts::before {
     list-style: none;
     color: black;
     letter-spacing: 0.2em;
+    background: linear-gradient(to bottom, white 30%, #f0c52e 30%, #f0c52e 70%, white 70%);
 }
 
 /*--------Footer------------*/
