@@ -189,6 +189,11 @@ nav {
     padding-left: 90px;
 }
 
+.main-products form {
+    position: absolute;
+
+}
+
 .main-products ul {
     margin: 0;
     padding: 0;
@@ -342,19 +347,22 @@ div.info-bg {
 }
 
 .info input[type="radio"]:checked + label {
+    margin-right: 0;
+    padding-right: 116px;
     color: #f7e184;
-    background-color: black;
+    background: black;
 }
 
 .info input[type="radio"] + label {
     margin-bottom: 25px;
+    margin-right: 116px;
     padding-top: 12px;
     padding-bottom: 10px;
-    padding-left: 18px;
     font-weight: bold;
     font-size: 18px;
     letter-spacing: 0.2em;
     font-family: "Gilroy", "Tahoma", sans-serif;
+    text-align: center;
     text-transform: uppercase;
     color: black;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, #f0c52e 40%, #f0c52e 60%, rgba(255, 255, 255, 0) 60%);
@@ -383,7 +391,7 @@ div.info-bg {
     padding-bottom: 30px;
     font-weight: bold;
     font-size: 47px;
-    font-family: "Gilroy". "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     color: black;
 }
 
@@ -499,21 +507,27 @@ section.contacts::before {
 }
 
 .contacts p {
+    padding-left: 1px;
     font-weight: lighter;
     font-size: 15px;
     line-height: 30px;
     font-family: "Open Sans", "Tahoma", sans-serif;
+    letter-spacing: 0;
     color: #464646;
 }
 
 .contacts img {
-    padding-top: 20px;
-    padding-bottom: 75px;
+    padding-top: 24px;
+    padding-bottom: 78px;
+}
+
+.contacts span {
+    display: inline-flex;
 }
 
 .contacts a {
-    display: block;
-    width: 260px;
+    padding-right: 37px;
+    padding-left: 41px;
     font-weight: bold;
     font-size: 18px;
     letter-spacing: 0.2em;
