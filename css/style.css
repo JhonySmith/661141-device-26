@@ -13,7 +13,7 @@
 }
 
 @font-face {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: lighter;
     src: url("../fonts/OpenSans-Light.ttf");
@@ -21,7 +21,7 @@
 }
 
 @font-face {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: normal;
     src: url("../fonts/OpenSans-Regular.ttf");
@@ -48,18 +48,18 @@
 /*--------Header------------*/
 
 .logo {
-    background: linear-gradient(to bottom, white 50%, #f7e296 50%);
     margin-top: 32px;
     padding-left: 60px;
+    background: linear-gradient(to bottom, white 50%, #f7e296 50%);
 }
 
 .nav-top {
     display: flex;
     justify-content: space-between;
-    background-color: #f7e296;
     padding-top: 28px;
-    padding-left: 60px;
     padding-right: 60px;
+    padding-left: 60px;
+    background-color: #f7e296;
 }
 
 
@@ -75,12 +75,12 @@ nav {
 }
 
 .nav-top input[type="text"] {
-    border: none;
-    background-color: #f7e296;
-    font-family: "Open Sans";
     font-weight: lighter;
     font-size: 15px;
     letter-spacing: 0.01em;
+    font-family: "Open Sans", "Tahoma", sans-serif, "Tahoma", sans-serif;
+    background-color: #f7e296;
+    border: none;
 }
 
 .nav-official {
@@ -104,24 +104,24 @@ nav {
 .nav-official a {
     font-size: 15px;
     letter-spacing: 0.01em;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Tahoma", sans-serif, "Tahoma", sans-serif;
     text-decoration: none;
     color: black;
 }
 
 .user-in::before {
-    content: url("../img/user.svg");
     margin-right: 15px;
+    content: url("../img/user.svg");
 }
 
 .comparison::before {
-    content: url("../img/compare.svg");
     margin-right: 10px;
+    content: url("../img/compare.svg");
 }
 
 .cart::before {
-    content: url("../img/cart.svg");
     margin-right: 12px;
+    content: url("../img/cart.svg");
 }
 
 /*--------Main menu------------*/
@@ -129,13 +129,13 @@ nav {
 .nav-menu {
     display: flex;
     justify-content: space-between;
-    padding: 0;
     margin: 0;
-    background-color: #f7e296;
+    padding: 0;
     padding-top: 50px;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 60px;
+    background-color: #f7e296;
 }
 
 .nav-menu li {
@@ -153,7 +153,7 @@ nav {
 .nav-menu a {
     font-size: 18px;
     font-weight: bold;
-    font-family: 'Gilroy';
+    font-family: "Gilroy", "Tahoma", sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     list-style: none;
@@ -168,18 +168,18 @@ nav {
 }
 
 .drop-menu ul a {
-    font-size: 15px;
-    font-weight: lighter;
-    font-family: "Open Sans";
-    text-transform: none;
-    letter-spacing: 0.01em;
     display: none;
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    font-family: "Open Sans", "Tahoma", sans-serif, "Tahoma", sans-serif;
+    text-transform: none;
 }
 
 .drop-head::after {
-    content: url("../img/plus.svg");
     margin-left: 12px;
     opacity: 0.3;
+    content: url("../img/plus.svg");
 }
 
 /*--------Main products slider------------*/
@@ -204,33 +204,32 @@ nav {
 }
 
 .main-products b {
-    font-family: 'Gilroy';
     font-weight: bold;
     font-size: 47px;
     line-height: 56px;
     letter-spacing: 0.01em;
+    font-family: "Gilroy", "Tahoma", sans-serif;
 }
 
 .main-products p {
-    font-family: "Open Sans";
+    margin-bottom: 60px;
     font-weight: lighter;
     font-size: 15px;
     line-height: 30px;
+    font-family: "Open Sans", "Tahoma", sans-serif, "Tahoma", sans-serif;
     color: #464646;
-    margin-bottom: 60px;
 }
 
 .main-products a {
-    font-family: 'Gilroy';
+    padding-left: 43px;
+    padding-right: 43px;
     font-weight: bold;
     font-size: 18px;
+    letter-spacing: 0.2em;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    letter-spacing: 0.2em;
-    background-clip: border-box;
-    padding-left: 43px;
-    padding-right: 43px;
     background: linear-gradient(to bottom, white 30%, #f0c52e 30%, #f0c52e 70%, white 70%);
 }
 
@@ -241,20 +240,20 @@ nav {
 
 .main-products th {
     padding-right: 80px;
-    font-family: "Open Sans";
     font-weight: lighter;
     font-size: 13px;
-    color: black;
     letter-spacing: 0.01em;
+    font-family: "Open Sans", "Tahoma", sans-serif, "Tahoma", sans-serif;
+    color: black;
 }
 
 .main-products td {
-    font-family: 'Gilroy';
     font-weight: normal;
     font-size: 36px;
-    color: black;
     letter-spacing: 0.01em;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     text-align: left;
+    color: black;
 }
 
 .product-1 {
@@ -281,49 +280,48 @@ nav {
 /*--------Product groups------------*/
 
 .groups-items {
-    padding: 0;
-    margin: 0;
-    margin-top: 105px;
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    margin-top: 105px;
     padding: 0;
 }
 
 .groups-items li {
-    list-style: none;
     width: 160px;
+    list-style: none;
 }
 
 .groups-items a {
-    text-decoration: none;
     display: flex;
     flex-direction: column-reverse;
+    text-decoration: none;
 }
 
 .groups-items h3 {
-    font-family: 'Gilroy';
+    margin-top: 35px;
+    padding: 0;
     font-weight: bold;
     font-size: 18px;
-    color: black;
     line-height: 24px;
     letter-spacing: 0.01em;
-    padding: 0;
-    margin-top: 35px;
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    color: black;
 }
 
 div.groups-img {
-    width: 160px;
-    height: 160px;
     display: flex;
-    background-color: #f7e296;
     justify-content: center;
     align-items: center;
+    width: 160px;
+    height: 160px;
+    background-color: #f7e296;
 }
 
 /*--------Delivery, warranty, credit------------*/
 
 div.info-bg {
-    background: linear-gradient(to bottom, white 29%, #e5e5e5 29%)
+    background: linear-gradient(to bottom, white 29%, #e5e5e5 29%);
 }
 
 .info {
@@ -344,21 +342,21 @@ div.info-bg {
 }
 
 .info input[type="radio"]:checked + label {
-    background: black;
     color: #f7e184;
+    background-color: black;
 }
 
 .info input[type="radio"] + label {
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Gilroy';
-    text-transform: uppercase;
-    color: black;
-    letter-spacing: 0.2em;
+    margin-bottom: 25px;
     padding-top: 12px;
     padding-bottom: 10px;
     padding-left: 18px;
-    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    text-transform: uppercase;
+    color: black;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, #f0c52e 40%, #f0c52e 60%, rgba(255, 255, 255, 0) 60%);
 }
 
@@ -368,8 +366,8 @@ div.info-bg {
 }
 
 .info li {
-    list-style: none;
     display: flex;
+    list-style: none;
 }
 
 .info-text {
@@ -380,20 +378,20 @@ div.info-bg {
 }
 
 .info h3 {
-    font-family: 'Gilroy';
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
     font-weight: bold;
     font-size: 47px;
+    font-family: "Gilroy". "Tahoma", sans-serif;
     color: black;
-    padding: 0;
-    margin: 0;
-    padding-bottom: 30px;
 }
 
 .info p {
-    font-family: "Open Sans";
     font-weight: lighter;
     font-size: 15px;
     line-height: 30px;
+    font-family: "Open Sans", "Tahoma", sans-serif, "Tahoma", sans-serif;
     color: #464646;
 }
 
@@ -415,10 +413,10 @@ li.credit {
 .brands ul {
     display: flex;
     justify-content: space-around;
-    padding: 0;
     margin: 0;
     margin-top: 100px;
     margin-bottom: 85px;
+    padding: 0;
 }
 
 .brands li {
@@ -436,17 +434,17 @@ section.about::before,
 section.contacts::before {
     content: "";
     display: block;
-    background-color: black;
     height: 7px;
     width: 80px;
+    background-color: black;
 }
 
 .about h2,
 .contacts h2 {
-    font-family: 'Gilroy';
+    margin-top: 40px;
     font-weight: bold;
     font-size: 47px;
-    margin-top: 40px;
+    font-family: "Gilroy", "Tahoma", sans-serif;
 }
 
 .about {
@@ -456,12 +454,12 @@ section.contacts::before {
 }
 
 .about p {
-    font-family: "Open Sans";
     font-weight: lighter;
     font-size: 15px;
     line-height: 30px;
-    color: #464646;
     letter-spacing: 0;
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    color: #464646;
 }
 
 .about ul {
@@ -472,7 +470,7 @@ section.contacts::before {
 }
 
 .about li {
-    font-family: 'Gilroy';
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 47px;
@@ -482,17 +480,16 @@ section.contacts::before {
 .about a {
     display: block;
     width: 260px;
-    text-align: center;
-    font-family: 'Gilroy';
     font-weight: bold;
     font-size: 18px;
+    letter-spacing: 0.2em;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     list-style: none;
+    text-align: center;
     color: black;
-    letter-spacing: 0.2em;
     background: linear-gradient(to bottom, white 30%, #f0c52e 30%, #f0c52e 70%, white 70%);
-
 }
 
 .contacts {
@@ -502,10 +499,10 @@ section.contacts::before {
 }
 
 .contacts p {
-    font-family: "Open Sans";
     font-weight: lighter;
     font-size: 15px;
     line-height: 30px;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     color: #464646;
 }
 
@@ -517,15 +514,15 @@ section.contacts::before {
 .contacts a {
     display: block;
     width: 260px;
-    text-align: center;
-    font-family: 'Gilroy';
     font-weight: bold;
     font-size: 18px;
+    letter-spacing: 0.2em;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     list-style: none;
+    text-align: center;
     color: black;
-    letter-spacing: 0.2em;
     background: linear-gradient(to bottom, white 30%, #f0c52e 30%, #f0c52e 70%, white 70%);
 }
 
@@ -538,8 +535,8 @@ section.contacts::before {
 .footer {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 80px;
     margin-top: 90px;
+    padding-bottom: 80px;
 }
 
 .footer-adress svg {
@@ -548,20 +545,20 @@ section.contacts::before {
 }
 
 .footer-adress p {
-    font-family: "Open Sans";
-    font-weight: lighter;
-    font-size: 15px;
-    color: #e6e6e6;
     margin-top: 35px;
     margin-bottom: 80px;
+    font-weight: lighter;
+    font-size: 15px;
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    color: #e6e6e6;
 }
 
 .footer-adress::after {
     content: "";
     display: block;
-    background-color: #ffc600;
     height: 7px;
     width: 80px;
+    background-color: #ffc600;
 }
 
 .nav-soicials {
@@ -572,8 +569,8 @@ section.contacts::before {
 .footer-nav {
     display: flex;
     justify-content: space-around;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 .footer-nav li {
@@ -581,13 +578,13 @@ section.contacts::before {
 }
 
 .footer-nav a {
-    font-size: 18px;
     font-weight: bold;
-    font-family: 'Gilroy';
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     list-style: none;
-    letter-spacing: 0.2em;
     color: white;
 }
 
@@ -616,33 +613,33 @@ section.contacts::before {
 }
 
 ul.footer-nav-official {
-    padding: 0;
     margin: 0;
+    padding: 0;
     padding-top: 70px;
     padding-bottom: 50px;
 }
 
 .footer-nav-official li {
-    list-style: none;
     margin-left: 12px;
+    list-style: none;
 }
 
 .footer-nav-official a {
     font-size: 15px;
     letter-spacing: 0.01em;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Tahoma", sans-serif;
     text-decoration: none;
     color: #e5e5e5;
 }
 
 a.phone {
-    text-decoration: none;
-    font-family: "Open Sans";
+    padding-bottom: 70px;
     font-weight: lighter;
     font-size: 15px;
     letter-spacing: 0;
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    text-decoration: none;
     color: #e5e5e5;
-    padding-bottom: 70px;
 }
 
 /*--------Catalog.index------------*/
@@ -653,44 +650,43 @@ a.phone {
 }
 
 h1 {
-    font-size: 47px;
-    font-weight: bold;
-    font-family: 'Gilroy';
-    letter-spacing: 0.01em;
     margin: 0;
     margin-top: 32px;
     margin-left: 60px;
-
+    font-weight: bold;
+    font-size: 47px;
+    letter-spacing: 0.01em;
+    font-family: "Gilroy", "Tahoma", sans-serif;
 }
 
 .head ul {
     display: flex;
-    padding: 0;
-    margin-left: 60px;
     margin-top: 20px;
     margin-bottom: 40px;
+    margin-left: 60px;
+    padding: 0;
 }
 
 .head li {
-    list-style: none;
-    font-family: "Open Sans";
     font-weight: lighter;
     font-size: 14px;
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    list-style: none;
     color: #e5e5e5;
 }
 
 .head a {
-    text-decoration: none;
-    font-family: "Open Sans";
     font-weight: lighter;
     font-size: 14px;
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    text-decoration: none;
     color: #e5e5e5;
 }
 
 .content-bg {
-    background: url("../img/bg-catalog.png") no-repeat;
     width: 1440px;
     margin: 0 auto;
+    background: url("../img/bg-catalog.png") no-repeat;
 }
 
 .contents {
@@ -698,12 +694,12 @@ h1 {
 }
 
 .contents h2 {
-    padding-top: 26px;
     margin: 0;
-    font-size: 16px;
+    padding-top: 26px;
     font-weight: bold;
-    font-family: 'Gilroy';
+    font-size: 16px;
     letter-spacing: 0.2em;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     text-transform: uppercase;
 }
 
@@ -719,8 +715,9 @@ h1 {
 }
 
 .filters form {
-    margin-top: 69px;
     width: 200px;
+    margin-top: 69px;
+
 }
 
 .filters ul {
@@ -731,7 +728,7 @@ h1 {
 .filters li {
     padding-bottom: 10px;
     list-style: none;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-weight: lighter;
     font-size: 14px;
     color: black;
@@ -739,24 +736,24 @@ h1 {
 
 .price-range label {
     padding-bottom: 15px;
-    font-size: 18px;
     font-weight: bold;
-    font-family: 'Gilroy';
+    font-size: 18px;
     letter-spacing: 0.01em;
+    font-family: "Gilroy", "Tahoma", sans-serif;
 }
 
 .filters fieldset {
-    border: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    border: none;
 }
 
 .filters legend {
     padding-bottom: 15px;
-    font-size: 18px;
     font-weight: bold;
-    font-family: 'Gilroy';
+    font-size: 18px;
     letter-spacing: 0.01em;
+    font-family: "Gilroy", "Tahoma", sans-serif;
 }
 
 .filter-color label {
@@ -801,23 +798,23 @@ h1 {
 .sorting ul {
     display: flex;
     align-items: center;
-    padding: 0;
     margin: 0;
     margin-top: 25px;
     margin-left: 20px;
+    padding: 0;
 }
 
 .sorting li {
-    list-style: none;
     margin-left: 30px;
+    list-style: none;
 }
 
 .sorting a {
-    text-decoration: none;
-    font-family: "Open Sans";
     font-weight: normal;
     font-size: 14px;
     letter-spacing: 0;
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    text-decoration: none;
     color: #bababa;
 }
 
@@ -854,18 +851,18 @@ a.active-sort {
 }
 
 .item h3 {
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Gilroy';
-    letter-spacing: 0.01em;
     margin: 0;
     padding: 0;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    font-family: "Gilroy", "Tahoma", sans-serif;
 }
 
 .item span {
-    font-size: 16px;
     font-weight: normal;
-    font-family: 'Gilroy';
+    font-size: 16px;
     letter-spacing: 0.01em;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     color: #464646;
 }
