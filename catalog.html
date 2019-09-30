@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <h1 class="visually-hidden">Моноподы для селфи</h1>
-        <nav class="fixed">
+        <nav class="nav fixed">
             <div class="logo">
                 <a href="index.html">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35" width="164" height="35">
@@ -20,10 +20,9 @@
             </div>
             <div class="nav-top">
                 <form>
-                    <img src="img/search.svg" width="16" height="16" alt="Поиск">
                     <label for="site-search" aria-label="Поиск по сайту"></label>
                     <input id="site-search" type="text" name="site-search" placeholder="Поиск по сайту">
-                    <button type="submit">Найти</button>
+                    <button class="visually-hidden" type="submit">Найти</button>
                 </form>
                 <ul class="nav-official">
                     <li><a href="#"><img src="img/user.svg" alt="Пользователь">Валентин Петухов</a></li>
@@ -171,13 +170,15 @@
                                     </a>
                                 </li>
                             </ul>
-                            <a href="#">НАЗАД</a>
-                            <ul>
-                                <li><a>1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                            </ul>
-                            <a href="#">ВПЕРЕД</a>
+                            <div class="items-nav">
+                                <a href="#">НАЗАД</a>
+                                <ul class="items-nav-numbers">
+                                    <li>1</li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                </ul>
+                                <a href="#">ВПЕРЕД</a>
+                            </div>
                         </section>
                     </div>
                 </div>
