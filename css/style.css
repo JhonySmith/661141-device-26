@@ -17,7 +17,6 @@
   font-style: normal;
   font-weight: 300;
   src: url("../fonts/OpenSans-Light.ttf");
-
 }
 
 @font-face {
@@ -69,7 +68,6 @@
   padding-left: 60px;
   background-color: #f7e296;
 }
-
 
 .nav {
   display: flex;
@@ -249,7 +247,6 @@
   width: 500px;
   margin: 0;
   padding: 0;
-
 }
 
 /*--------Drop menu------------*/
@@ -292,7 +289,6 @@
   position: absolute;
   top: 600px;
   left: 1250px;
-
 }
 
 .main-products ul {
@@ -337,16 +333,23 @@
   text-decoration: none;
   text-transform: uppercase;
   color: black;
-  background: linear-gradient(to bottom, white 30%, #f0c52e 30%, #f0c52e 70%, white 70%);
+  background: linear-gradient(
+    to bottom,
+    white 30%,
+    #f0c52e 30%,
+    #f0c52e 70%,
+    white 70%
+  );
 }
 
 .main-products table {
   margin-top: 61px;
-  border-color: white;
+  border: none;
 }
 
 .main-products th {
-  padding-right: 80px;
+  padding-top: 10px;
+  padding-right: 75px;
   font-weight: 300;
   font-size: 13px;
   letter-spacing: 0.01em;
@@ -355,6 +358,7 @@
 }
 
 .main-products td {
+  padding-left: 0;
   font-weight: 400;
   font-size: 36px;
   letter-spacing: 0.01em;
@@ -363,39 +367,32 @@
   color: black;
 }
 
-.main-products input[type="radio"]+label::before {
+.main-products input[type="radio"] + label::before {
   content: url("../img/slider-button-empty.svg");
   margin-left: 20px;
 }
 
-.main-products input[type="radio"]:checked+label::before {
+.main-products input[type="radio"]:checked + label::before {
   content: url("../img/slider-button.svg");
   margin-left: 20px;
 }
 
-
 .product-1 {
-  background:
-    url(../img/01.png) no-repeat 91% 2%,
+  background: url(../img/01.png) no-repeat 91% 2%,
     linear-gradient(to bottom, #f7e296 23%, white 23%);
 }
 
 .product-2 {
   display: none;
-  background:
-    url(../img/02.png) no-repeat 91% 2%,
+  background: url(../img/02.png) no-repeat 91% 2%,
     linear-gradient(to bottom, #f7e296 23%, white 23%);
 }
 
 .product-3 {
   display: none;
-  background:
-    url(../img/03.png) no-repeat 91% 2%,
+  background: url(../img/03.png) no-repeat 91% 2%,
     linear-gradient(to bottom, #f7e296 23%, white 23%);
 }
-
-
-
 
 /*--------Product groups------------*/
 
@@ -419,7 +416,7 @@
 }
 
 .groups-items h3 {
-  margin-top: 35px;
+  margin-top: 31px;
   padding: 0;
   font-weight: 700;
   font-size: 18px;
@@ -441,13 +438,13 @@
 /*--------Delivery, warranty, credit------------*/
 
 div.info-bg {
-  background: linear-gradient(to bottom, white 29%, #e5e5e5 29%);
+  background: linear-gradient(to bottom, white 26%, #e5e5e5 26%);
 }
 
 .info {
   display: flex;
-  margin-top: 70px;
-  padding-bottom: 70px;
+  margin-top: 64px;
+  padding-bottom: 75px;
 }
 
 .info form {
@@ -455,23 +452,25 @@ div.info-bg {
   flex-direction: column;
   width: 277px;
   padding-top: 80px;
+  padding-bottom: 40px;
+  border-right: 7px solid black;
 }
 
 .info input[type="radio"] {
   display: none;
 }
 
-.info input[type="radio"]:checked+label {
+.info input[type="radio"]:checked + label {
   margin-right: 0;
   padding-right: 116px;
   color: #f7e184;
   background: black;
 }
 
-.info input[type="radio"]+label {
+.info input[type="radio"] + label {
   margin-bottom: 25px;
   margin-right: 116px;
-  padding-top: 12px;
+  padding-top: 10px;
   padding-bottom: 10px;
   font-weight: 700;
   font-size: 18px;
@@ -480,7 +479,13 @@ div.info-bg {
   text-align: center;
   text-transform: uppercase;
   color: black;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, #f0c52e 40%, #f0c52e 60%, rgba(255, 255, 255, 0) 60%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 40%,
+    #f0c52e 40%,
+    #f0c52e 60%,
+    rgba(255, 255, 255, 0) 60%
+  );
 }
 
 .info ul {
@@ -495,15 +500,14 @@ div.info-bg {
 
 .info-text {
   width: 437px;
-  padding-left: 115px;
+  padding-left: 116px;
   padding-top: 70px;
-  border-left: 7px solid black;
 }
 
 .info h3 {
   margin: 0;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 13px;
   font-weight: 700;
   font-size: 47px;
   font-family: "Gilroy", "Tahoma", sans-serif;
@@ -519,8 +523,8 @@ div.info-bg {
 }
 
 .info img {
-  margin-left: 105px;
-  padding-top: 100px;
+  margin-left: 120px;
+  padding-top: 85px;
 }
 
 li.warranty {
@@ -535,15 +539,26 @@ li.credit {
 
 .brands ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
-  margin-top: 100px;
-  margin-bottom: 85px;
+  margin-top: 93px;
+  margin-bottom: 89px;
   padding: 0;
 }
 
 .brands li {
   list-style: none;
+}
+
+.brands img {
+  filter: grayscale(100%);
+  filter: gray;
+  opacity: 0.2;
+}
+
+.brands img:hover {
+  filter: none;
+  opacity: 1;
 }
 
 /*--------About&Contacts------------*/
@@ -565,6 +580,7 @@ section.contacts::before {
 .about h2,
 .contacts h2 {
   margin-top: 40px;
+  margin-bottom: 27px;
   font-weight: 700;
   font-size: 47px;
   font-family: "Gilroy", "Tahoma", sans-serif;
@@ -586,8 +602,8 @@ section.contacts::before {
 }
 
 .about ul {
-  margin-top: 20px;
-  margin-bottom: 65px;
+  margin-top: 51px;
+  margin-bottom: 52px;
   padding-left: 15px;
   list-style-image: url(../img/ul-list.png);
 }
@@ -596,13 +612,17 @@ section.contacts::before {
   font-family: "Gilroy", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 47px;
+  line-height: 40px;
   padding-left: 25px;
 }
 
 .about a {
   display: block;
   width: 260px;
+
+  padding-top: 13px;
+  padding-bottom: 13px;
+
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.2em;
@@ -612,7 +632,21 @@ section.contacts::before {
   list-style: none;
   text-align: center;
   color: black;
-  background: linear-gradient(to bottom, white 30%, #f0c52e 30%, #f0c52e 70%, white 70%);
+  background: linear-gradient(
+    to bottom,
+    white 40%,
+    #f0c52e 40%,
+    #f0c52e 60%,
+    white 60%
+  );
+}
+
+.about a:hover {
+  background: #f0c52e;
+}
+
+.about a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .contacts {
@@ -633,7 +667,7 @@ section.contacts::before {
 
 .contacts img {
   padding-top: 24px;
-  padding-bottom: 78px;
+  padding-bottom: 65px;
 }
 
 .contacts span {
@@ -641,8 +675,7 @@ section.contacts::before {
 }
 
 .contacts a {
-  padding-right: 37px;
-  padding-left: 41px;
+  padding: 13px 37px 13px 41px;
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.2em;
@@ -652,7 +685,21 @@ section.contacts::before {
   list-style: none;
   text-align: center;
   color: black;
-  background: linear-gradient(to bottom, white 30%, #f0c52e 30%, #f0c52e 70%, white 70%);
+  background: linear-gradient(
+    to bottom,
+    white 40%,
+    #f0c52e 40%,
+    #f0c52e 60%,
+    white 60%
+  );
+}
+
+.contacts a:hover {
+  background: #f0c52e;
+}
+
+.contacts a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /*--------Footer------------*/
@@ -664,7 +711,7 @@ section.contacts::before {
 .footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 90px;
+  margin-top: 79px;
   padding-bottom: 80px;
 }
 
@@ -674,8 +721,8 @@ section.contacts::before {
 }
 
 .footer-adress p {
-  margin-top: 35px;
-  margin-bottom: 80px;
+  margin-top: 32px;
+  margin-bottom: 83px;
   font-weight: 300;
   font-size: 15px;
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
@@ -692,7 +739,7 @@ section.contacts::before {
 
 .nav-soicials {
   width: 440px;
-  padding-top: 140px;
+  padding-top: 137px;
 }
 
 .footer-nav {
@@ -841,7 +888,6 @@ section.contacts::before {
 .filters form {
   width: 200px;
   margin-top: 69px;
-
 }
 
 .filters ul {
@@ -885,12 +931,12 @@ section.contacts::before {
   align-items: center;
 }
 
-.filter-color input[type="checkbox"]+label::before {
+.filter-color input[type="checkbox"] + label::before {
   content: url("../img/checkbox-off.svg");
   margin-right: 18px;
 }
 
-.filter-color input[type="checkbox"]:checked+label::before {
+.filter-color input[type="checkbox"]:checked + label::before {
   content: url("../img/checkbox-on.svg");
   margin-right: 14px;
 }
@@ -900,12 +946,12 @@ section.contacts::before {
   align-items: center;
 }
 
-.filter-bth input[type="radio"]+label::before {
+.filter-bth input[type="radio"] + label::before {
   content: url("../img/radio-off.svg");
   margin-right: 15px;
 }
 
-.filter-bth input[type="radio"]:checked+label::before {
+.filter-bth input[type="radio"]:checked + label::before {
   content: url("../img/radio-on.svg");
   margin-right: 15px;
 }
@@ -957,7 +1003,6 @@ a.active-sort {
   list-style: none;
 }
 
-
 .list-items li:nth-child(2n-1) {
   padding-right: 40px;
 }
@@ -1000,7 +1045,6 @@ a.active-sort {
   height: 70px;
   margin-left: 140px;
   background: url("../img/bg-nav-catalog.png") no-repeat center;
-
 }
 
 .items-nav a,
@@ -1145,7 +1189,6 @@ a.active-sort {
 .close:hover,
 .close:focus {
   background-color: rgba(255, 204, 51, 1);
-
 }
 
 .close:focus {
@@ -1155,7 +1198,6 @@ a.active-sort {
 .close:active {
   background-color: rgba(255, 204, 51, 0.3);
 }
-
 
 .close::before,
 .close::after {
@@ -1193,7 +1235,13 @@ a.active-sort {
   text-transform: uppercase;
 
   border: none;
-  background: linear-gradient(to bottom, white 40%, #f0c52e 40%, #f0c52e 60%, white 60%);
+  background: linear-gradient(
+    to bottom,
+    white 40%,
+    #f0c52e 40%,
+    #f0c52e 60%,
+    white 60%
+  );
 
   transition: background 0.5s ease;
 }
@@ -1201,7 +1249,6 @@ a.active-sort {
 .send:hover,
 .send:focus {
   background: #f0c52e;
-
 }
 
 .send:active {
