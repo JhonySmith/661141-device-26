@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -169,7 +170,6 @@
         </section>
         <div class="info-bg">
             <section class="fixed info">
-
                 <h2 class="visually-hidden">Доставка, гарантия, кредит</h2>
                 <form action="submit">
                     <input type="radio" id="delivery" name="slider-info" value="delivery" checked>
@@ -236,7 +236,7 @@
                 <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                 <img src="img/map.png" width="560" height="222" alt="Адрес офиса на карте">
                 <span>
-                    <a href="#">Напишите нам</a>
+                    <a id="write-us" href="#">Напишите нам</a>
                 </span>
             </section>
         </div>
@@ -276,7 +276,7 @@
         </footer>
     </div>
     <img src="img/map-big.png" width="960" height="559" alt="Адрес офиса на карте">
-    <section class="popup-write-us">
+    <section id="popup-write-us" class="popup-write-us">
         <form method="get" action="https://echo.htmlacademy.ru">
             <p class="client-name">
                 <label for="client-name">Ваше имя:</label>
@@ -293,8 +293,9 @@
             <button class="send" type="submit">Отправить</button>
         </form>
 
-        <button class="close" type="button">&#10006;</button>
+        <button id="close" class="close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
