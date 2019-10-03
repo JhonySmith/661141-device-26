@@ -239,6 +239,14 @@
   color: black;
 }
 
+.nav-menu a:hover {
+  opacity: 0.6;
+}
+
+.nav-menu a:active {
+  opacity: 0.3;
+}
+
 .nav-menu-right {
   display: flex;
   justify-content: space-between;
@@ -324,8 +332,8 @@
 }
 
 .main-products a {
-  padding-left: 45px;
-  padding-right: 41px;
+  padding: 13px 41px 13px 45px;
+
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.2em;
@@ -333,13 +341,22 @@
   text-decoration: none;
   text-transform: uppercase;
   color: black;
+
   background: linear-gradient(
     to bottom,
-    white 30%,
-    #f0c52e 30%,
-    #f0c52e 70%,
-    white 70%
+    white 40%,
+    #f0c52e 40%,
+    #f0c52e 60%,
+    white 60%
   );
+}
+
+.main-product a:hover {
+  background: #f0c52e;
+}
+
+.main-product a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-products table {
@@ -415,6 +432,10 @@
   text-decoration: none;
 }
 
+.groups-items a:active {
+  opacity: 0.6;
+}
+
 .groups-items h3 {
   margin-top: 31px;
   padding: 0;
@@ -433,6 +454,10 @@
   width: 160px;
   height: 160px;
   background-color: #f7e296;
+}
+
+.groups-img:hover {
+  background-color: #f0c52e;
 }
 
 /*--------Delivery, warranty, credit------------*/
@@ -486,6 +511,16 @@ div.info-bg {
     #f0c52e 60%,
     rgba(255, 255, 255, 0) 60%
   );
+}
+
+.info input[type="radio"] + label:hover {
+  cursor: pointer;
+  background: #f0c52e;
+}
+
+.info input[type="radio"]:checked + label:hover {
+  cursor: default;
+  background: black;
 }
 
 .info ul {
@@ -674,7 +709,7 @@ section.contacts::before {
   display: inline-flex;
 }
 
-.contacts a {
+.contacts span a {
   padding: 13px 37px 13px 41px;
   font-weight: 700;
   font-size: 18px;
@@ -694,11 +729,11 @@ section.contacts::before {
   );
 }
 
-.contacts a:hover {
+.contacts span a:hover {
   background: #f0c52e;
 }
 
-.contacts a:active {
+.contacts span a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -715,9 +750,21 @@ section.contacts::before {
   padding-bottom: 80px;
 }
 
+.footer-adress {
+  margin-right: 130px;
+}
+
 .footer-adress svg {
   margin-top: 65px;
   fill: #ffc600;
+}
+
+.footer-adress svg:hover {
+  opacity: 0.6;
+}
+
+.footer-adress svg:active {
+  opacity: 0.3;
 }
 
 .footer-adress p {
@@ -738,13 +785,13 @@ section.contacts::before {
 }
 
 .nav-soicials {
-  width: 440px;
+  width: 430px;
   padding-top: 137px;
 }
 
 .footer-nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -764,9 +811,17 @@ section.contacts::before {
   color: white;
 }
 
+.footer-nav a:hover {
+  opacity: 0.7;
+}
+
+.footer-nav a:active {
+  opacity: 0.3;
+}
+
 .socials {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 50px 140px 0 140px;
 }
 
@@ -775,7 +830,15 @@ section.contacts::before {
 }
 
 .socials img {
-  opacity: 0.3;
+  opacity: 0.4;
+}
+
+.socials img:hover {
+  opacity: 0.6;
+}
+
+.socials img:active {
+  opacity: 0.2;
 }
 
 .footer-right {
@@ -796,8 +859,24 @@ section.contacts::before {
 }
 
 .footer-nav-official li {
-  margin-left: 12px;
+  margin-left: 39px;
   list-style: none;
+}
+
+.footer-nav-official li:hover {
+  opacity: 0.8;
+}
+
+.footer-nav-official li:active {
+  opacity: 0.6;
+}
+
+.footer-nav-official a:hover {
+  opacity: 1;
+}
+
+.footer-nav-official li:first-child {
+  margin-left: 0;
 }
 
 .footer-nav-official a {
@@ -806,6 +885,22 @@ section.contacts::before {
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   text-decoration: none;
   color: #e5e5e5;
+  opacity: 0.6;
+}
+
+.user-in-footer::before {
+  margin-right: 15px;
+  content: url("../img/user-footer.svg");
+}
+
+.comparison-footer::before {
+  margin-right: 10px;
+  content: url("../img/compare-footer.svg");
+}
+
+.cart-footer::before {
+  margin-right: 8px;
+  content: url("../img/cart-footer.svg");
 }
 
 .phone {
@@ -816,6 +911,18 @@ section.contacts::before {
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   text-decoration: none;
   color: #e5e5e5;
+}
+
+.phone:hover {
+  opacity: 0.7;
+}
+
+.academy:hover {
+  opacity: 0.7;
+}
+
+.academy:active {
+  opacity: 0.4;
 }
 
 /*--------Catalog.index------------*/
@@ -1079,6 +1186,16 @@ a.active-sort {
 
 .items-nav li:last-child {
   margin: 0;
+}
+
+.popup-full-map {
+  display: none;
+
+  position: fixed;
+  top: 25%;
+  left: 50%;
+
+  margin-left: -480px;
 }
 
 .popup-write-us {
