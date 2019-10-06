@@ -1096,6 +1096,31 @@ section.contacts::before {
   margin-right: 15px;
 }
 
+.btn {
+  padding: 13px 37px 13px 41px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  font-family: "Gilroy", "Tahoma", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+  text-align: center;
+  color: black;
+  background: linear-gradient(
+    to bottom,
+    transparent 40%,
+    #f0c52e 40%,
+    #f0c52e 60%,
+    transparent 60%
+  );
+  border: none;
+}
+
+.btn:hover {
+  background: #f0c52e;
+}
+
 .sorting {
   display: flex;
   margin-bottom: 69px;
@@ -1174,6 +1199,22 @@ a.active-sort {
   letter-spacing: 0.01em;
   font-family: "Gilroy", "Tahoma", sans-serif;
   color: #464646;
+}
+
+.item img {
+  margin-top: 70px;
+  margin-bottom: 35px;
+}
+
+.new:before {
+  position: absolute;
+  left: 1109px;
+  top: 1080px;
+  display: block;
+  content: "NEW";
+  border-radius: 50%;
+  background-color: transparent;
+  z-index: 2;
 }
 
 .items-nav {
