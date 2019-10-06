@@ -961,6 +961,39 @@ section.contacts::before {
   color: #e5e5e5;
 }
 
+.user::before {
+  margin-right: 8px;
+  content: url("../img/user.svg");
+}
+
+.user {
+  margin-right: 20px;
+}
+
+.nav-official-left {
+  display: flex;
+}
+
+.bread-crumbs li {
+  display: flex;
+  align-items: center;
+
+  margin-right: 20px;
+}
+
+.bread-crumbs li:nth-child(1):after,
+.bread-crumbs li:nth-child(2):after {
+  content: "";
+
+  display: block;
+
+  width: 4px;
+  height: 7px;
+  margin-left: 15px;
+
+  background: url("../img/nav-arrow.svg") no-repeat center;
+}
+
 .content-bg {
   width: 1440px;
   margin: 0 auto;
