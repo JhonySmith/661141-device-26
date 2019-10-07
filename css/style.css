@@ -784,9 +784,20 @@ section.contacts::before {
   background-color: #ffc600;
 }
 
+.nav-social-right {
+  display: flex;
+}
+
 .nav-soicials {
   width: 430px;
-  padding-top: 137px;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  margin-left: 200px;
 }
 
 .footer-nav {
@@ -849,11 +860,8 @@ section.contacts::before {
 
 .footer-nav-official {
   display: flex;
-}
 
-.footer-right ul {
   margin: 0;
-  padding: 0;
   padding-top: 70px;
   padding-bottom: 50px;
 }
@@ -1021,6 +1029,44 @@ section.contacts::before {
   border-top: 2px solid black;
 }
 
+.range-button {
+  padding: 2px;
+  border: 8px solid white;
+  border-radius: 50%;
+  background-color: #ababab;
+  box-shadow: 0 2px #ababab;
+  cursor: pointer;
+}
+
+.range-button:active {
+  border: 10px solid white;
+}
+
+.range-button-1 {
+  margin-right: 85px;
+}
+
+.range-buttons {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    transparent 45%,
+    #91c92f 45%,
+    #91c92f 55%,
+    transparent 55%
+  );
+}
+
+.range-buttons::after {
+  content: "";
+  display: block;
+  width: 73px;
+  height: 2px;
+  background-color: #ababab;
+}
+
 .filters {
   margin-left: 60px;
 }
@@ -1069,6 +1115,15 @@ section.contacts::before {
 .filter-color label {
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+
+.filter-color label:hover {
+  opacity: 0.6;
+}
+
+.filter-color label:active {
+  opacity: 1;
 }
 
 .filter-color input[type="checkbox"] + label::before {
@@ -1084,6 +1139,14 @@ section.contacts::before {
 .filter-bth label {
   display: flex;
   align-items: center;
+}
+
+.filter-bth label:hover {
+  opacity: 0.6;
+}
+
+.filter-bth label:active {
+  opacity: 1;
 }
 
 .filter-bth input[type="radio"] + label::before {
