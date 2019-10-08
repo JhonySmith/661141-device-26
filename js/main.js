@@ -13,25 +13,36 @@ var slideOneChecked = document.querySelector("#bigest-monopod");
 var slideTwoChecked = document.querySelector("#fitness-bracelet");
 var slideThreeChecked = document.querySelector("#quadrocopter");
 
-
-slideOneChecked.addEventListener('change', function() {
+slideOneChecked.addEventListener("change", function() {
   slideOne.classList.remove("hidden");
   slideTwo.classList.add("hidden");
   slideThree.classList.add("hidden");
 });
 
-slideTwoChecked.addEventListener('change', function() {
+slideTwoChecked.addEventListener("change", function() {
   slideOne.classList.add("hidden");
   slideTwo.classList.remove("hidden");
   slideThree.classList.add("hidden");
 });
 
-slideThreeChecked.addEventListener('change', function() {
+slideThreeChecked.addEventListener("change", function() {
   slideOne.classList.add("hidden");
   slideTwo.classList.add("hidden");
   slideThree.classList.remove("hidden");
 });
 
+var dropMenu = document.querySelector(".drop-head");
+var dropMenuList = document.querySelector(".drop-menu-list");
+
+dropMenu.addEventListener("click", function(evt) {
+  evt.preventDefault();
+
+  if (dropMenuList.classList.contains("hidden")) {
+    dropMenuList.classList.remove("hidden");
+  } else {
+    dropMenuList.classList.add("hidden");
+  }
+});
 
 writeUs.onclick = function() {
   document.getElementById("popup-write-us").style.display = "flex";

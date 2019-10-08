@@ -263,8 +263,36 @@
   margin-right: 280px;
 }
 
+.drop-menu-list {
+  position: absolute;
+  display: flex;
+
+  width: 1040px;
+  padding-top: 25px;
+  padding-bottom: 31px;
+  padding-right: 2px;
+
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+
+  background-color: #f7e296;
+}
+
+.drop-menu-list ul:first-child {
+  padding-left: 0;
+}
+
+.drop-menu-list li:last-child {
+  margin: 0;
+}
+
+.drop-menu-list li {
+  padding-top: 20px;
+}
+
 .drop-menu ul a {
-  display: none;
   font-weight: 300;
   font-size: 15px;
   letter-spacing: 0.01em;
