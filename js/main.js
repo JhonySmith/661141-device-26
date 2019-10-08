@@ -5,6 +5,34 @@ var closeMap = document.getElementById("close-map");
 var search = document.getElementById("site-search");
 var searchButton = document.getElementById("search-button");
 
+var slideOne = document.querySelector(".product-1");
+var slideTwo = document.querySelector(".product-2");
+var slideThree = document.querySelector(".product-3");
+
+var slideOneChecked = document.querySelector("#bigest-monopod");
+var slideTwoChecked = document.querySelector("#fitness-bracelet");
+var slideThreeChecked = document.querySelector("#quadrocopter");
+
+
+slideOneChecked.addEventListener('change', function() {
+  slideOne.classList.remove("hidden");
+  slideTwo.classList.add("hidden");
+  slideThree.classList.add("hidden");
+});
+
+slideTwoChecked.addEventListener('change', function() {
+  slideOne.classList.add("hidden");
+  slideTwo.classList.remove("hidden");
+  slideThree.classList.add("hidden");
+});
+
+slideThreeChecked.addEventListener('change', function() {
+  slideOne.classList.add("hidden");
+  slideTwo.classList.add("hidden");
+  slideThree.classList.remove("hidden");
+});
+
+
 writeUs.onclick = function() {
   document.getElementById("popup-write-us").style.display = "flex";
   return false;
