@@ -44,6 +44,32 @@ dropMenu.addEventListener("click", function(evt) {
   }
 });
 
+var deliveryRadio = document.querySelector("#delivery");
+var warrantyRadio = document.querySelector("#warranty");
+var creditRadio = document.querySelector("#credit");
+
+var delivery = document.querySelector(".delivery");
+var warranty = document.querySelector(".warranty");
+var credit = document.querySelector(".credit");
+
+deliveryRadio.addEventListener("change", function() {
+  delivery.classList.remove("hidden");
+  warranty.classList.add("hidden");
+  credit.classList.add("hidden");
+});
+
+warrantyRadio.addEventListener("change", function() {
+  delivery.classList.add("hidden");
+  warranty.classList.remove("hidden");
+  credit.classList.add("hidden");
+});
+
+creditRadio.addEventListener("change", function() {
+  delivery.classList.add("hidden");
+  warranty.classList.add("hidden");
+  credit.classList.remove("hidden");
+});
+
 writeUs.onclick = function() {
   document.getElementById("popup-write-us").style.display = "flex";
   return false;

@@ -557,7 +557,6 @@ div.info-bg {
 }
 
 .info li {
-  display: flex;
   list-style: none;
 }
 
@@ -588,14 +587,6 @@ div.info-bg {
 .info img {
   margin-left: 120px;
   padding-top: 85px;
-}
-
-li.warranty {
-  display: none;
-}
-
-li.credit {
-  display: none;
 }
 
 /*--------Brands------------*/
@@ -1552,5 +1543,9 @@ a.active-sort {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
+}
+
+.flex {
+  display: flex;
 }
