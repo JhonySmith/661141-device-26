@@ -321,7 +321,16 @@
 
 .main-product {
   display: flex;
+  justify-content: space-between;
+
   padding-left: 90px;
+}
+
+.main-product-img {
+  display: flex;
+  justify-content: center;
+
+  width: 590px;
 }
 
 .main-products form {
@@ -337,10 +346,11 @@
 
 .main-products li {
   list-style: none;
+  padding-left: 0;
 }
 
 .product-description {
-  margin-left: 125px;
+  width: 560px;
   padding-top: 78px;
 }
 
