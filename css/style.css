@@ -210,7 +210,6 @@
   margin: 0;
   padding: 0;
   padding-top: 31px;
-  padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 55px;
   background-color: #f7e296;
@@ -267,9 +266,9 @@
   position: absolute;
   display: flex;
 
-  width: 1040px;
+  width: 1100px;
+  padding-left: 60px;
   padding-top: 25px;
-  padding-right: 60px;
   padding-bottom: 31px;
 
   font-weight: 300;
@@ -298,6 +297,10 @@
   letter-spacing: 0.01em;
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   text-transform: none;
+}
+
+.drop-head {
+  margin-left: 60px;
 }
 
 .drop-head::after {
@@ -930,6 +933,11 @@ section.contacts::before {
   content: url("../img/cart-footer.svg");
 }
 
+.user-footer::before {
+  margin-right: 8px;
+  content: url("../img/user-footer.svg");
+}
+
 .phone {
   padding-bottom: 70px;
   font-weight: 300;
@@ -1205,7 +1213,7 @@ section.contacts::before {
 
 .sorting {
   display: flex;
-  margin-bottom: 69px;
+  margin-bottom: 45px;
 }
 
 .sorting h2 {
@@ -1254,9 +1262,15 @@ a.active-sort {
   padding-right: 40px;
 }
 
-.item a {
+.item li {
   display: flex;
   flex-direction: column-reverse;
+  justify-content: flex-end;
+
+  margin-top: 50px;
+}
+
+.item a {
   text-decoration: none;
   color: black;
 }
@@ -1283,15 +1297,36 @@ a.active-sort {
   color: #464646;
 }
 
-.item img {
-  margin-top: 70px;
+.item-img {
+  position: relative;
+
+  height: 380px;
   margin-bottom: 35px;
 }
 
+.item-img-link {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
+.item-img:hover .item-img-link {
+  display: flex;
+}
+
 .new:before {
-  position: relative;
-  left: 275px;
-  bottom: 385px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 
   display: flex;
   justify-content: center;
@@ -1310,6 +1345,23 @@ a.active-sort {
   border-radius: 50%;
   background-color: transparent;
   opacity: 0.2;
+}
+
+.item-img-link a:nth-child(2) {
+  margin-top: 30px;
+
+  font-weight: 300;
+  font-size: 13px;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.item-img-link a:nth-child(2):hover {
+  color: black;
+}
+
+.item-img-link a:nth-child(2):active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .items-nav {
