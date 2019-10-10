@@ -347,6 +347,7 @@
 .main-products li {
   list-style: none;
   padding-left: 0;
+  min-height: 504px;
 }
 
 .product-description {
@@ -1378,10 +1379,10 @@ a.active-sort {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
+
   height: 70px;
   margin-left: 140px;
+
   background: url("../img/bg-nav-catalog.png") no-repeat center;
 }
 
@@ -1393,6 +1394,14 @@ a.active-sort {
   font-size: 16px;
   letter-spacing: 0.2em;
   font-family: "Gilroy", "Tahoma", sans-serif;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 126px;
+  height: 70px;
 }
 
 .items-nav-numbers a {
