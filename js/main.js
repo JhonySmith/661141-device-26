@@ -1,5 +1,49 @@
-var writeUs = document.getElementById("write-us");
-var closePopup = document.getElementById("close");
+//---Модальное оно "Напиши нам"
+var writeUsButton = document.querySelector(".write-us");
+var writeUs = document.querySelector(".popup-write-us");
+var closePopup = document.querySelector("#close");
+var clientName = writeUs.querySelector("[name=client-name]");
+var clientEmail = writeUs.querySelector("[name=client-email]");
+var writeUsForm = writeUs.querySelector("form");
+
+//------Открытие модального окна "Напиши нам"
+if (writeUsButton) {
+  writeUsButton.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    writeUs.classList.remove("hidden");
+    writeUs.classList.add("bounce-animate");
+    clientName.focus();
+  });
+}
+
+//------Отправка данных модального окна "Напиши нам"
+if (writeUsForm) {
+  writeUsForm.addEventListener("submit", function(evt) {
+    if (!clientName.value || !clientEmail.value) {
+      evt.preventDefault();
+      console.log(12);
+      writeUs.classList.add("error-animate");
+    }
+    console.log(34);
+  });
+}
+
+//------Закрытие модального окна "Напиши нам"
+if (closePopup) {
+  closePopup.addEventListener("click", function() {
+    writeUs.classList.add("hidden");
+  });
+}
+
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    if (!writeUs.classList.contains("hidden")) {
+      evt.preventDefault();
+      writeUs.classList.add("hidden");
+    }
+  }
+});
+
 var fullMap = document.getElementById("full-map");
 var closeMap = document.getElementById("close-map");
 var search = document.getElementById("site-search");
@@ -80,19 +124,6 @@ if (creditRadio) {
     warranty.classList.add("hidden");
     credit.classList.remove("hidden");
   });
-}
-
-if (writeUs) {
-  writeUs.onclick = function() {
-    document.getElementById("popup-write-us").style.display = "flex";
-    return false;
-  };
-}
-
-if (closePopup) {
-  closePopup.onclick = function() {
-    document.getElementById("popup-write-us").style.display = "none";
-  };
 }
 
 if (fullMap) {

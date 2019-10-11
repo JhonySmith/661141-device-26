@@ -500,8 +500,8 @@
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
-    <section id="popup-write-us" class="popup-write-us">
-      <form method="get" action="https://echo.htmlacademy.ru">
+    <section id="popup-write-us" class="popup-write-us hidden">
+      <form action="https://echo.htmlacademy.ru" method="post">
         <p class="client-name">
           <label for="client-name">Ваше имя:</label>
           <input
@@ -509,6 +509,7 @@
             type="text"
             name="client-name"
             placeholder="Имя Фамилия"
+            required
           />
         </p>
         <p class="client-email">
@@ -518,6 +519,7 @@
             type="text"
             name="client-email"
             placeholder="email@example.com"
+            required
           />
         </p>
         <p class="letter-text">
