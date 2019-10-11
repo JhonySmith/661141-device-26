@@ -15,37 +15,80 @@ if (writeUsButton) {
     clientName.focus();
   });
 }
-
 //------Отправка данных модального окна "Напиши нам"
 if (writeUsForm) {
   writeUsForm.addEventListener("submit", function(evt) {
     if (!clientName.value || !clientEmail.value) {
       evt.preventDefault();
-      console.log(12);
+      writeUs.classList.remove("error-animate");
+      writeUs.offsetWidth = writeUs.offsetWidth;
       writeUs.classList.add("error-animate");
     }
-    console.log(34);
   });
 }
-
-//------Закрытие модального окна "Напиши нам"
+//------Закрытие модального окна "Напиши нам" кнопкой
 if (closePopup) {
   closePopup.addEventListener("click", function() {
     writeUs.classList.add("hidden");
   });
 }
-
-window.addEventListener("keydown", function(evt) {
-  if (evt.keyCode === 27) {
-    if (!writeUs.classList.contains("hidden")) {
-      evt.preventDefault();
-      writeUs.classList.add("hidden");
+//------Закрытие модального окна "Напиши нам" клавишей Esc
+if (writeUs) {
+  window.addEventListener("keydown", function(evt) {
+    if (evt.keyCode === 27) {
+      if (!writeUs.classList.contains("hidden")) {
+        evt.preventDefault();
+        writeUs.classList.add("hidden");
+      }
     }
-  }
-});
+  });
 
-var fullMap = document.getElementById("full-map");
-var closeMap = document.getElementById("close-map");
+  window.addEventListener("mousedown", function(evt) {
+    if (!writeUs.contains(evt.target)) {
+      if (!writeUs.classList.contains("hidden")) {
+        writeUs.classList.add("hidden");
+      }
+    }
+  });
+}
+
+//---Модальное окно с картой
+var fullMap = document.querySelector(".popup-full-map");
+var fullMapOpen = document.querySelector("#full-map");
+var closeMap = document.querySelector("#close-map");
+
+//------Открытие модального окна с картой
+if (fullMapOpen) {
+  fullMapOpen.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    fullMap.classList.remove("hidden");
+  });
+}
+//------Закрытие модальногого окна с картой по кнопке
+if (closeMap) {
+  closeMap.addEventListener("click", function() {
+    fullMap.classList.add("hidden");
+  });
+}
+//------Закртые модального окна с картой по клавише Esc
+if (fullMap) {
+  window.addEventListener("keydown", function(evt) {
+    if (evt.keyCode === 27) {
+      if (!fullMap.classList.contains("hidden")) {
+        fullMap.classList.add("hidden");
+      }
+    }
+  });
+
+  window.addEventListener("mousedown", function(evt) {
+    if (!fullMap.classList.contains("hidden")) {
+      if (!fullMap.contains(evt.target)) {
+        fullMap.classList.add("hidden");
+      }
+    }
+  });
+}
+
 var search = document.getElementById("site-search");
 var searchButton = document.getElementById("search-button");
 
@@ -124,19 +167,6 @@ if (creditRadio) {
     warranty.classList.add("hidden");
     credit.classList.remove("hidden");
   });
-}
-
-if (fullMap) {
-  fullMap.onclick = function() {
-    document.getElementById("popup-full-map").style.display = "block";
-    return false;
-  };
-}
-
-if (closeMap) {
-  closeMap.onclick = function() {
-    document.getElementById("popup-full-map").style.display = "none";
-  };
 }
 
 search.onfocus = function() {

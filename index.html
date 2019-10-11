@@ -63,9 +63,9 @@
             </div>
           </li>
           <div class="nav-menu-right">
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#info">Доставка</a></li>
+            <li><a href="#info">Гарантия</a></li>
+            <li><a href="#contacts">Контакты</a></li>
           </div>
         </ul>
       </nav>
@@ -279,7 +279,7 @@
         </ul>
       </section>
       <div class="info-bg">
-        <section class="fixed info">
+        <section class="fixed info" id="info">
           <h2 class="visually-hidden">Доставка, гарантия, кредит</h2>
           <form action="submit">
             <input
@@ -372,8 +372,8 @@
         </ul>
       </section>
 
-      <div class="about-contacts fixed">
-        <section class="about">
+      <div class="about-contacts fixed" id="about-contacts">
+        <section class="about" id="about">
           <h2>О нас</h2>
           <p>
             Огромный выбор гаджетов не оставит равнодушным гика,<br />
@@ -391,7 +391,7 @@
           <a href="#">ПОДРОБНЕЕ О НАС</a>
         </section>
 
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <h2>Контакты</h2>
           <p>
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
@@ -440,7 +440,7 @@
               <ul class="footer-nav">
                 <li><a href="#">Доставка</a></li>
                 <li><a href="#">Гарантия</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#contacts">Контакты</a></li>
               </ul>
               <ul class="socials">
                 <li>
@@ -489,7 +489,7 @@
       </footer>
     </div>
 
-    <section class="popup-full-map" id="popup-full-map">
+    <section class="popup-full-map hidden" id="popup-full-map">
       <img
         src="img/map-big.png"
         width="960"
@@ -509,7 +509,6 @@
             type="text"
             name="client-name"
             placeholder="Имя Фамилия"
-            required
           />
         </p>
         <p class="client-email">
@@ -519,7 +518,6 @@
             type="text"
             name="client-email"
             placeholder="email@example.com"
-            required
           />
         </p>
         <p class="letter-text">
