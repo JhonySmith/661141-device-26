@@ -298,7 +298,7 @@
 
 .drop-menu-list {
   position: absolute;
-  display: flex;
+  display: none;
 
   width: 1100px;
   padding-left: 60px;
@@ -349,6 +349,10 @@
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
   opacity: 0.3;
+}
+
+.nav-menu li:hover .drop-menu-list {
+  display: flex;
 }
 
 /*--------Main products slider------------*/

@@ -124,19 +124,6 @@ if (slideThreeChecked) {
   });
 }
 
-var dropMenu = document.querySelector(".drop-head");
-var dropMenuList = document.querySelector(".drop-menu-list");
-
-dropMenu.addEventListener("click", function(evt) {
-  evt.preventDefault();
-
-  if (dropMenuList.classList.contains("hidden")) {
-    dropMenuList.classList.remove("hidden");
-  } else {
-    dropMenuList.classList.add("hidden");
-  }
-});
-
 var deliveryRadio = document.querySelector("#delivery");
 var warrantyRadio = document.querySelector("#warranty");
 var creditRadio = document.querySelector("#credit");
@@ -179,3 +166,12 @@ search.onblur = function() {
     "2px solid transparent";
   document.getElementById("search-button").style.display = "none";
 };
+
+var warrantyLink = document.querySelector(".warranty-link");
+
+warrantyLink.addEventListener("click", function() {
+  warrantyRadio.checked = true;
+  delivery.classList.add("hidden");
+  warranty.classList.remove("hidden");
+  credit.classList.add("hidden");
+});
