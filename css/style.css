@@ -1024,7 +1024,7 @@ section.contacts::before {
 .head ul {
   display: flex;
   margin-top: 25px;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
   margin-left: 60px;
   padding: 0;
 }
@@ -1101,7 +1101,7 @@ section.contacts::before {
 .price-range,
 .filter-color,
 .filter-bth {
-  padding-top: 15px;
+  padding-top: 12px;
   border-top: 2px solid black;
 }
 
@@ -1119,7 +1119,7 @@ section.contacts::before {
 }
 
 .range-button-1 {
-  margin-right: 85px;
+  margin-right: 95px;
 }
 
 .range-buttons {
@@ -1127,7 +1127,7 @@ section.contacts::before {
   display: flex;
   align-items: center;
 
-  padding-top: 20px;
+  margin-bottom: 0;
 
   background: linear-gradient(
     to bottom,
@@ -1146,6 +1146,24 @@ section.contacts::before {
   background-color: #ababab;
 }
 
+.range-label {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.range-label p {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 13px;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  color: #ababab;
+}
+
+.range-label p:first-child {
+  margin-right: 85px;
+}
+
 .filters {
   margin-left: 60px;
 }
@@ -1161,7 +1179,7 @@ section.contacts::before {
 }
 
 .filters li {
-  padding-bottom: 10px;
+  padding-bottom: 14px;
   list-style: none;
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 300;
@@ -1184,7 +1202,7 @@ section.contacts::before {
 }
 
 .filters legend {
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.01em;
@@ -1297,6 +1315,43 @@ section.contacts::before {
 
 a.active-sort {
   color: black;
+}
+
+.sort-btn {
+  display: flex;
+  align-items: center;
+
+  padding-top: 25px;
+  margin-left: 235px;
+}
+
+.sort-btn a {
+  display: block;
+  height: 0;
+  width: 0;
+  border-width: 10px 5px 10px 5px;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.sort-btn a:hover {
+  opacity: 0.7;
+}
+
+.sort-btn .sort-btn-up {
+  border-top: 0;
+  border-bottom-color: black;
+}
+
+.sort-btn .sort-btn-down {
+  margin-left: 20px;
+
+  border-bottom: 0;
+  border-top-color: black;
+}
+
+.sort-active {
+  opacity: 0.5;
 }
 
 .list-items ul {
@@ -1447,6 +1502,14 @@ a.active-sort {
   height: 70px;
 }
 
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-button:active {
+  opacity: 0.5;
+}
+
 .items-nav-numbers a {
   opacity: 0.3;
 }
@@ -1479,6 +1542,8 @@ a.active-sort {
   left: 50%;
 
   margin-left: -480px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .popup-write-us {
