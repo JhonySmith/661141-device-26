@@ -2,9 +2,11 @@
 var writeUsButton = document.querySelector(".write-us");
 var writeUs = document.querySelector(".popup-write-us");
 var closePopup = document.querySelector("#close");
-var clientName = writeUs.querySelector("[name=client-name]");
-var clientEmail = writeUs.querySelector("[name=client-email]");
-var writeUsForm = writeUs.querySelector("form");
+if (writeUs) {
+  var clientName = writeUs.querySelector("[name=client-name]");
+  var clientEmail = writeUs.querySelector("[name=client-email]");
+  var writeUsForm = writeUs.querySelector("form");
+}
 
 //------Открытие модального окна "Напиши нам"
 if (writeUsButton) {
@@ -169,9 +171,11 @@ search.onblur = function() {
 
 var warrantyLink = document.querySelector(".warranty-link");
 
-warrantyLink.addEventListener("click", function() {
-  warrantyRadio.checked = true;
-  delivery.classList.add("hidden");
-  warranty.classList.remove("hidden");
-  credit.classList.add("hidden");
-});
+if (warrantyLink) {
+  warrantyLink.addEventListener("click", function() {
+    warrantyRadio.checked = true;
+    delivery.classList.add("hidden");
+    warranty.classList.remove("hidden");
+    credit.classList.add("hidden");
+  });
+}
