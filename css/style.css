@@ -1105,96 +1105,70 @@ section.contacts::before {
   border-top: 2px solid black;
 }
 
-.range-button {
-  padding: 2px;
-  border: 8px solid white;
-  border-radius: 50%;
+.range-progress {
+  position: relative;
+  width: 200px;
+  height: 4px;
   background-color: #ababab;
-  box-shadow: 0 2px #ababab;
-  cursor: pointer;
-}
-
-.range-button:active {
-  border: 10px solid white;
-}
-
-.range-button-1 {
-  margin-right: 95px;
-}
-
-.range-buttons {
-  height: 30px;
-  display: flex;
-  align-items: center;
-
-  margin-bottom: 0;
-
-  background: linear-gradient(
-    to bottom,
-    transparent 45%,
-    #91c92f 45%,
-    #91c92f 55%,
-    transparent 55%
-  );
 }
 
 .range-bar {
-  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 75%;
+  height: 4px;
+  background-color: #91c92f;
 }
 
-.range-bar-start {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-
-  background: linear-gradient(
-    to bottom,
-    transparent 30%,
-    #91c92f 30%,
-    #91c92f 35%,
-    transparent 35%
-  );
-}
-
-.range-bar-end {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  background: linear-gradient(
-    to bottom,
-    transparent 30%,
-    #ababab 30%,
-    #ababab 35%,
-    transparent 35%
-  );
-}
-
-.range-bar-point p {
+.range-bar-point {
+  position: absolute;
+  top: -8px;
   margin: 0;
 }
 
-.range-bar-point input[type="text"] {
-  width: 55px;
+.range-bar-start {
+  left: 0;
+}
 
-  font-weight: 300;
-  font-size: 13px;
-  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
-  color: #ababab;
+.range-bar-end {
+  left: 100%;
+}
 
-  background-color: transparent;
+.range-button {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
   border: none;
+  border-radius: 50%;
+  background-color: #989898;
 }
 
-.range-label {
-  display: flex;
-  margin-bottom: 45px;
+.range-button::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 4px / 2);
+  left: calc(50% - 4px / 2);
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #878787;
 }
 
-.range-label p:first-child {
-  margin-right: 85px;
+.range-bar-point input {
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 70px / 2);
+  display: block;
+  width: 70px;
+  border: none;
+  background-color: transparent;
+  text-align: center;
 }
 
 .filters {
