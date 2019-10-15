@@ -1138,26 +1138,59 @@ section.contacts::before {
   );
 }
 
-.range-buttons::after {
-  content: "";
-  display: block;
-  width: 73px;
-  height: 2px;
-  background-color: #ababab;
-}
-
-.range-label {
+.range-bar {
   display: flex;
-  margin-bottom: 45px;
 }
 
-.range-label p {
+.range-bar-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  background: linear-gradient(
+    to bottom,
+    transparent 30%,
+    #91c92f 30%,
+    #91c92f 35%,
+    transparent 35%
+  );
+}
+
+.range-bar-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    to bottom,
+    transparent 30%,
+    #ababab 30%,
+    #ababab 35%,
+    transparent 35%
+  );
+}
+
+.range-bar-point p {
   margin: 0;
+}
+
+.range-bar-point input[type="text"] {
+  width: 55px;
 
   font-weight: 300;
   font-size: 13px;
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   color: #ababab;
+
+  background-color: transparent;
+  border: none;
+}
+
+.range-label {
+  display: flex;
+  margin-bottom: 45px;
 }
 
 .range-label p:first-child {

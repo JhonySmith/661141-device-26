@@ -93,21 +93,27 @@
               <form action="">
                 <div class="price-range">
                   <label for="price-range">Стоимость</label>
-                  <p class="range-buttons">
-                    <button
-                      class="range-button range-button-1"
-                      type="button"
-                    ></button>
-                    <button
-                      class="range-button range-button-2"
-                      type="button"
-                    ></button>
-                  </p>
-                </div>
-                <div class="range-label">
-                  <p>от 0</p>
-                  <p>до 5000</p>
-                </div>
+
+                  <div class="range">
+                    <div class="range-progress">
+                      <div class="range-bar">
+                        <div class="range-bar-point range-bar-start">
+                          <button class="range-button" type="button"></button>
+                          <p>
+                            <label for="" class="visually-hidden"></label>
+                            <input type="text" value="от 0" />
+                          </p>
+                        </div>
+                        <div class="range-bar-point range-bar-end">
+                          <button class="range-button" type="button"></button>
+                          <p>
+                            <label for="" class="visually-hidden"></label>
+                            <input type="text" value="до 5000" />
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 <div class="filter-color">
                   <fieldset>
                     <legend>Цвет</legend>
@@ -208,8 +214,8 @@
                   <li><a href="#">По популярности</a></li>
                 </ul>
                 <span class="sort-btn">
-                  <a class="sort-btn-up sort-active"href="#"></a>
-                  <a class="sort-btn-down"href="#"></a>
+                  <a class="sort-btn-up sort-active" href="#"></a>
+                  <a class="sort-btn-down" href="#"></a>
                 </span>
               </section>
 
