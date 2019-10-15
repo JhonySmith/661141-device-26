@@ -1078,10 +1078,25 @@ section.contacts::before {
   background: url("../img/nav-arrow.svg") no-repeat center;
 }
 
+.content-container {
+  display: flex;
+  justify-content: center;
+}
+
+.content-container-left {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .content-bg {
+  background-color: #efefef;
+}
+
+.content-bg-img {
   width: 1440px;
   margin: 0 auto;
-  background: url("../img/bg-catalog.png") no-repeat;
+  background-image: url("../img/bg-catalog.png");
 }
 
 .contents {
@@ -1089,27 +1104,36 @@ section.contacts::before {
 }
 
 .contents h2 {
-  margin: 0;
-  padding-top: 26px;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.2em;
-  font-family: "Gilroy", "Tahoma", sans-serif;
-  text-transform: uppercase;
 }
 
 .price-range,
 .filter-color,
 .filter-bth {
-  padding-top: 12px;
   border-top: 2px solid black;
+  padding-top: 12px;
+}
+
+.price-range {
+  padding-bottom: 67px;
+}
+
+.filter-color {
+  padding-bottom: 20px;
+}
+
+.filter-bth {
+  padding-bottom: 20px;
+}
+
+.range {
+  margin-top: 36px;
 }
 
 .range-progress {
   position: relative;
   width: 200px;
-  height: 4px;
-  background-color: #ababab;
+  height: 2px;
+  background-color: #dbdbdb;
 }
 
 .range-bar {
@@ -1117,8 +1141,8 @@ section.contacts::before {
   top: 0;
   left: 0;
   display: block;
-  width: 75%;
-  height: 4px;
+  width: 54%;
+  height: 2px;
   background-color: #91c92f;
 }
 
@@ -1129,7 +1153,7 @@ section.contacts::before {
 }
 
 .range-bar-start {
-  left: 0;
+  left: -5px;
 }
 
 .range-bar-end {
@@ -1143,9 +1167,17 @@ section.contacts::before {
   height: 20px;
   padding: 0;
   margin: 0;
+  margin-bottom: 3px;
   border: none;
   border-radius: 50%;
-  background-color: #989898;
+  background-color: white;
+  cursor: pointer;
+}
+
+.range-button:active {
+  width: 22px;
+  height: 22px;
+  margin-bottom: 1px;
 }
 
 .range-button::before {
@@ -1157,7 +1189,7 @@ section.contacts::before {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #878787;
+  background-color: #ababab;
 }
 
 .range-bar-point input {
@@ -1167,12 +1199,48 @@ section.contacts::before {
   display: block;
   width: 70px;
   border: none;
+
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Gilroy", "Tahoma", sans-serif;
+  color: black;
+
+  opacity: 0.2;
   background-color: transparent;
   text-align: center;
 }
 
+.range-bar-point p {
+  margin: 0;
+}
+
+.range-bar-start p {
+  margin-left: 35px;
+}
+
 .filters {
-  margin-left: 60px;
+  width: 100%;
+}
+
+.filters-head {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.filters-head h2 {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  min-width: 268px;
+  padding: 0;
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  font-family: "Gilroy", "Tahoma", sans-serif;
+  text-transform: uppercase;
 }
 
 .filters form {
