@@ -1144,6 +1144,7 @@ section.contacts::before {
   margin-top: 36px;
 }
 
+<<<<<<< HEAD
 .range-progress {
   position: relative;
   width: 200px;
@@ -1159,29 +1160,82 @@ section.contacts::before {
   width: 54%;
   height: 2px;
   background-color: #91c92f;
+=======
+.range-button {
+  padding: 2px;
+  border: 8px solid white;
+  border-radius: 50%;
+  background-color: #ababab;
+  box-shadow: 0 2px #ababab;
+  cursor: pointer;
 }
 
-.range-bar-point {
-  position: absolute;
-  top: -8px;
-  margin: 0;
+.range-button:active {
+  border: 10px solid white;
+>>>>>>> parent of eda18fe... range
+}
+
+.range-button-1 {
+  margin-right: 95px;
+}
+
+.range-buttons {
+  height: 30px;
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 0;
+
+  background: linear-gradient(
+    to bottom,
+    transparent 45%,
+    #91c92f 45%,
+    #91c92f 55%,
+    transparent 55%
+  );
+}
+
+.range-bar {
+  display: flex;
 }
 
 .range-bar-start {
+<<<<<<< HEAD
   left: -5px;
+=======
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  background: linear-gradient(
+    to bottom,
+    transparent 30%,
+    #91c92f 30%,
+    #91c92f 35%,
+    transparent 35%
+  );
+>>>>>>> parent of eda18fe... range
 }
 
 .range-bar-end {
-  left: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    to bottom,
+    transparent 30%,
+    #ababab 30%,
+    #ababab 35%,
+    transparent 35%
+  );
 }
 
-.range-button {
-  position: relative;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 0;
+.range-bar-point p {
   margin: 0;
+<<<<<<< HEAD
   margin-bottom: 3px;
   border: none;
   border-radius: 50%;
@@ -1223,6 +1277,29 @@ section.contacts::before {
   opacity: 0.2;
   background-color: transparent;
   text-align: center;
+=======
+}
+
+.range-bar-point input[type="text"] {
+  width: 55px;
+
+  font-weight: 300;
+  font-size: 13px;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  color: #ababab;
+
+  background-color: transparent;
+  border: none;
+}
+
+.range-label {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.range-label p:first-child {
+  margin-right: 85px;
+>>>>>>> parent of eda18fe... range
 }
 
 .range-bar-point p {
