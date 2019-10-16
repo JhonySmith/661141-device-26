@@ -1132,6 +1132,7 @@ section.contacts::before {
   padding-bottom: 67px;
 }
 
+<<<<<<< HEAD
 .filter-color {
   padding-bottom: 20px;
 }
@@ -1175,6 +1176,21 @@ section.contacts::before {
 >>>>>>> parent of eda18fe... range
 }
 
+=======
+.range-button {
+  padding: 2px;
+  border: 8px solid white;
+  border-radius: 50%;
+  background-color: #ababab;
+  box-shadow: 0 2px #ababab;
+  cursor: pointer;
+}
+
+.range-button:active {
+  border: 10px solid white;
+}
+
+>>>>>>> parent of eda18fe... range
 .range-button-1 {
   margin-right: 95px;
 }
@@ -1201,8 +1217,11 @@ section.contacts::before {
 
 .range-bar-start {
 <<<<<<< HEAD
+<<<<<<< HEAD
   left: -5px;
 =======
+=======
+>>>>>>> parent of eda18fe... range
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1215,6 +1234,9 @@ section.contacts::before {
     #91c92f 35%,
     transparent 35%
   );
+<<<<<<< HEAD
+>>>>>>> parent of eda18fe... range
+=======
 >>>>>>> parent of eda18fe... range
 }
 
@@ -1235,6 +1257,7 @@ section.contacts::before {
 
 .range-bar-point p {
   margin: 0;
+<<<<<<< HEAD
 <<<<<<< HEAD
   margin-bottom: 3px;
   border: none;
@@ -1308,6 +1331,29 @@ section.contacts::before {
 
 .range-bar-start p {
   margin-left: 35px;
+=======
+}
+
+.range-bar-point input[type="text"] {
+  width: 55px;
+
+  font-weight: 300;
+  font-size: 13px;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  color: #ababab;
+
+  background-color: transparent;
+  border: none;
+}
+
+.range-label {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.range-label p:first-child {
+  margin-right: 85px;
+>>>>>>> parent of eda18fe... range
 }
 
 .filters {
