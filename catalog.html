@@ -85,12 +85,30 @@
           <li>Моноподы для селфи</li>
         </ul>
       </div>
-      <div class="content-container">
-        <div class="content-container-left">
-          <section class="filters">
+
+      <div class="filter-sorting-bg">
+      <div class="filter-sorting fixed">
             <div class="filters-head">
-              <h2>Фильтр:</h2>
+               <h2>Фильтр:</h2>
             </div>
+           <div class="sorting">
+              <h2>СОРТИРОВКА:</h2>
+              <ul>
+                <li><a class="active-sort" href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По популярности</a></li>
+              </ul>
+              <span class="sort-btn">
+                <a class="sort-btn-up sort-active" href="#"></a>
+                <a class="sort-btn-down" href="#"></a>
+              </span>
+            </div>
+      </div>
+      </div>
+
+      <div class="form-items-bg">
+      <div class="form-items fixed">
+        <div class="form-filter">
             <form action="">
               <div class="price-range">
                 <label for="price-range">Стоимость</label>
@@ -114,11 +132,7 @@
                       </div>
                     </div>
                   </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of eda18fe... range
+
                 <div class="filter-color">
                   <fieldset>
                     <legend>Цвет</legend>
@@ -178,7 +192,7 @@
                       </li>
                     </ul>
                   </fieldset>
->>>>>>> parent of eda18fe... range
+
                 </div>
               </div>
               <div class="filter-color">
@@ -273,23 +287,15 @@
 
               <button class="btn" type="submit">ПОКАЗАТЬ</button>
             </form>
-          </section>
         </div>
+      </div>
+
+
+      <div class="content-container">
 
         <div class="content-container-right">
           <div class="sorting-content">
-            <section class="sorting">
-              <h2>СОРТИРОВКА:</h2>
-              <ul>
-                <li><a class="active-sort" href="#">По цене</a></li>
-                <li><a href="#">По типу</a></li>
-                <li><a href="#">По популярности</a></li>
-              </ul>
-              <span class="sort-btn">
-                <a class="sort-btn-up sort-active" href="#"></a>
-                <a class="sort-btn-down" href="#"></a>
-              </span>
-            </section>
+            
 
             <section class="list-items">
               <h2 class="visually-hidden">Список моноподов</h2>
@@ -392,6 +398,7 @@
               </div>
             </section>
           </div>
+        </div>
         </div>
       </div>
     </main>

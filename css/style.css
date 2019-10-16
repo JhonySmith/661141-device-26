@@ -1078,6 +1078,73 @@ section.contacts::before {
   background: url("../img/nav-arrow.svg") no-repeat center;
 }
 
+.filter-sorting-bg {
+  background: linear-gradient(to right, #dcdcdc 40%, #ebebeb 40%);
+}
+
+.filter-sorting {
+  display: flex;
+}
+
+.filters-head {
+  display: flex;
+  align-items: center;
+
+  height: 70px;
+  min-width: 268px;
+  margin-left: 60px;
+
+  background-color: #dcdcdc;
+}
+
+.filters-head h2 {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  font-family: "Gilroy", "Tahoma", sans-serif;
+  text-transform: uppercase;
+}
+
+.sorting {
+  display: flex;
+  align-items: center;
+  padding-left: 72px;
+
+  background-color: #ebebeb;
+}
+
+.sorting h2 {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  font-family: "Gilroy", "Tahoma", sans-serif;
+  text-transform: uppercase;
+}
+
+.sorting ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.sort-btn {
+  display: flex;
+  align-items: center;
+
+  margin-left: 235px;
+}
+
+.form-items {
+  display: flex;
+}
+
+.form-filter {
+  padding-left: 60px;
+  padding-right: 68px;
+}
+
 .content-container {
   display: flex;
   justify-content: center;
@@ -1103,9 +1170,6 @@ section.contacts::before {
   display: flex;
 }
 
-.contents h2 {
-}
-
 .price-range,
 .filter-color,
 .filter-bth {
@@ -1117,7 +1181,6 @@ section.contacts::before {
   padding-bottom: 67px;
 }
 
-<<<<<<< HEAD
 .filter-color {
   padding-bottom: 20px;
 }
@@ -1130,7 +1193,6 @@ section.contacts::before {
   margin-top: 36px;
 }
 
-<<<<<<< HEAD
 .range-progress {
   position: relative;
   width: 200px;
@@ -1146,22 +1208,8 @@ section.contacts::before {
   width: 54%;
   height: 2px;
   background-color: #91c92f;
-=======
-.range-button {
-  padding: 2px;
-  border: 8px solid white;
-  border-radius: 50%;
-  background-color: #ababab;
-  box-shadow: 0 2px #ababab;
-  cursor: pointer;
 }
 
-.range-button:active {
-  border: 10px solid white;
->>>>>>> parent of eda18fe... range
-}
-
-=======
 .range-button {
   padding: 2px;
   border: 8px solid white;
@@ -1175,7 +1223,19 @@ section.contacts::before {
   border: 10px solid white;
 }
 
->>>>>>> parent of eda18fe... range
+.range-button {
+  padding: 2px;
+  border: 8px solid white;
+  border-radius: 50%;
+  background-color: #ababab;
+  box-shadow: 0 2px #ababab;
+  cursor: pointer;
+}
+
+.range-button:active {
+  border: 10px solid white;
+}
+
 .range-button-1 {
   margin-right: 95px;
 }
@@ -1201,12 +1261,7 @@ section.contacts::before {
 }
 
 .range-bar-start {
-<<<<<<< HEAD
-<<<<<<< HEAD
   left: -5px;
-=======
-=======
->>>>>>> parent of eda18fe... range
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1219,10 +1274,6 @@ section.contacts::before {
     #91c92f 35%,
     transparent 35%
   );
-<<<<<<< HEAD
->>>>>>> parent of eda18fe... range
-=======
->>>>>>> parent of eda18fe... range
 }
 
 .range-bar-end {
@@ -1242,8 +1293,6 @@ section.contacts::before {
 
 .range-bar-point p {
   margin: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-bottom: 3px;
   border: none;
   border-radius: 50%;
@@ -1285,7 +1334,6 @@ section.contacts::before {
   opacity: 0.2;
   background-color: transparent;
   text-align: center;
-=======
 }
 
 .range-bar-point input[type="text"] {
@@ -1307,7 +1355,6 @@ section.contacts::before {
 
 .range-label p:first-child {
   margin-right: 85px;
->>>>>>> parent of eda18fe... range
 }
 
 .range-bar-point p {
@@ -1316,7 +1363,6 @@ section.contacts::before {
 
 .range-bar-start p {
   margin-left: 35px;
-=======
 }
 
 .range-bar-point input[type="text"] {
@@ -1338,32 +1384,10 @@ section.contacts::before {
 
 .range-label p:first-child {
   margin-right: 85px;
->>>>>>> parent of eda18fe... range
 }
 
 .filters {
   width: 100%;
-}
-
-.filters-head {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.filters-head h2 {
-  display: flex;
-  align-items: center;
-  height: 70px;
-  min-width: 268px;
-  padding: 0;
-  margin: 0;
-
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.2em;
-  font-family: "Gilroy", "Tahoma", sans-serif;
-  text-transform: uppercase;
 }
 
 .filters form {
@@ -1479,24 +1503,6 @@ section.contacts::before {
   background: #f0c52e;
 }
 
-.sorting {
-  display: flex;
-  margin-bottom: 45px;
-}
-
-.sorting h2 {
-  margin-left: 140px;
-}
-
-.sorting ul {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  margin-top: 25px;
-  margin-left: 20px;
-  padding: 0;
-}
-
 .sorting li {
   margin-left: 30px;
   list-style: none;
@@ -1513,14 +1519,6 @@ section.contacts::before {
 
 a.active-sort {
   color: black;
-}
-
-.sort-btn {
-  display: flex;
-  align-items: center;
-
-  padding-top: 25px;
-  margin-left: 235px;
 }
 
 .sort-btn a {
