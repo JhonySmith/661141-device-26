@@ -1145,50 +1145,6 @@ section.contacts::before {
   padding-right: 68px;
 }
 
-.content-container {
-  display: flex;
-  justify-content: center;
-}
-
-.content-container-left {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.content-bg {
-  background-color: #efefef;
-}
-
-.content-bg-img {
-  width: 1440px;
-  margin: 0 auto;
-  background-image: url("../img/bg-catalog.png");
-}
-
-.contents {
-  display: flex;
-}
-
-.price-range,
-.filter-color,
-.filter-bth {
-  border-top: 2px solid black;
-  padding-top: 12px;
-}
-
-.price-range {
-  padding-bottom: 67px;
-}
-
-.filter-color {
-  padding-bottom: 20px;
-}
-
-.filter-bth {
-  padding-bottom: 20px;
-}
-
 .range {
   margin-top: 36px;
 }
@@ -1204,60 +1160,10 @@ section.contacts::before {
   position: absolute;
   top: 0;
   left: 0;
-  display: block;
+  display: flex;
   width: 54%;
   height: 2px;
   background-color: #91c92f;
-}
-
-.range-button {
-  padding: 2px;
-  border: 8px solid white;
-  border-radius: 50%;
-  background-color: #ababab;
-  box-shadow: 0 2px #ababab;
-  cursor: pointer;
-}
-
-.range-button:active {
-  border: 10px solid white;
-}
-
-.range-button {
-  padding: 2px;
-  border: 8px solid white;
-  border-radius: 50%;
-  background-color: #ababab;
-  box-shadow: 0 2px #ababab;
-  cursor: pointer;
-}
-
-.range-button:active {
-  border: 10px solid white;
-}
-
-.range-button-1 {
-  margin-right: 95px;
-}
-
-.range-buttons {
-  height: 30px;
-  display: flex;
-  align-items: center;
-
-  margin-bottom: 0;
-
-  background: linear-gradient(
-    to bottom,
-    transparent 45%,
-    #91c92f 45%,
-    #91c92f 55%,
-    transparent 55%
-  );
-}
-
-.range-bar {
-  display: flex;
 }
 
 .range-bar-start {
@@ -1384,6 +1290,50 @@ section.contacts::before {
 
 .range-label p:first-child {
   margin-right: 85px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+}
+
+.content-container-left {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-bg {
+  background-color: #efefef;
+}
+
+.content-bg-img {
+  width: 1440px;
+  margin: 0 auto;
+  background-image: url("../img/bg-catalog.png");
+}
+
+.contents {
+  display: flex;
+}
+
+.price-range,
+.filter-color,
+.filter-bth {
+  border-top: 2px solid black;
+  padding-top: 12px;
+}
+
+.price-range {
+  padding-bottom: 67px;
+}
+
+.filter-color {
+  padding-bottom: 20px;
+}
+
+.filter-bth {
+  padding-bottom: 20px;
 }
 
 .filters {
