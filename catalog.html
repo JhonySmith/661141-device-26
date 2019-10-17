@@ -36,17 +36,15 @@
             />
             <button id="search-button" type="submit">Найти</button>
           </form>
-          <ul class="nav-official">
-            <span class="nav-official-left">
-              <li class="user">
-                <a href="#">Валентин Петухов</a>
-              </li>
-              <li><a href="#">Выйти</a></li>
-            </span>
-            <span class="nav-official-right">
-              <li class="comparison"><a href="#">Сравнить</a></li>
-              <li class="cart"><a href="#">Корзина</a></li>
-            </span>
+          <ul class="nav-official nav-official-left">
+            <li class="user">
+              <a href="#">Валентин Петухов</a>
+            </li>
+            <li class="user-out"><a href="#">Выйти</a></li>
+          </ul>
+          <ul class="nav-official nav-official-right">
+            <li class="comparison"><a href="#">Сравнить</a></li>
+            <li class="cart"><a href="#">Корзина</a></li>
           </ul>
         </div>
         <ul class="nav-menu">
@@ -67,11 +65,13 @@
               </ul>
             </div>
           </li>
-          <div class="nav-menu-right">
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
-          </div>
+          <li>
+            <ul class="nav-menu-right">
+              <li><a href="#info">Доставка</a></li>
+              <li><a class="warranty-link" href="#info">Гарантия</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
@@ -109,20 +109,20 @@
       <div class="form-items-bg">
         <div class="form-items fixed">
           <div class="form-filter">
-            <form action="">
+            <form action="#">
               <div class="price-range">
-                <label for="price-range">Стоимость</label>
+                <h3>Стоимость</h3>
                 <div class="range">
                   <div class="range-bar">
                     <p class="range-bar-point range-bar-start">
                       <button class="range-button" type="button"></button>
-                      <label for="" class="visually-hidden"></label>
-                      <input type="text" value="от 0" />
+                      <label for="range-start" class="visually-hidden"></label>
+                      <input type="text" id="range-start" value="от 0" />
                     </p>
                     <p class="range-bar-point range-bar-end">
                       <button class="range-button" type="button"></button>
-                      <label for="" class="visually-hidden"></label>
-                      <input type="text" value="до 5000" />
+                      <label for="range-end" class="visually-hidden"></label>
+                      <input type="text" id="range-end" value="до 5000" />
                     </p>
                   </div>
                 </div>

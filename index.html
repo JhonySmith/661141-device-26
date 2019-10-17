@@ -34,14 +34,12 @@
             />
             <button id="search-button" type="submit">Найти</button>
           </form>
-          <ul class="nav-official">
-            <span class="nav-official-left">
-              <li class="user-in"><a href="#">Войти</a></li>
-            </span>
-            <span class="nav-official-right">
-              <li class="comparison"><a href="#">Сравнить</a></li>
-              <li class="cart"><a href="#">Корзина</a></li>
-            </span>
+          <ul class="nav-official nav-official-left">
+            <li class="user-in"><a href="#">Войти</a></li>
+          </ul>
+          <ul class="nav-official nav-official-right">
+            <li class="comparison"><a href="#">Сравнить</a></li>
+            <li class="cart"><a href="#">Корзина</a></li>
           </ul>
         </div>
         <ul class="nav-menu">
@@ -62,11 +60,13 @@
               </ul>
             </div>
           </li>
-          <div class="nav-menu-right">
-            <li><a href="#info">Доставка</a></li>
-            <li><a class="warranty-link" href="#info">Гарантия</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-          </div>
+          <li>
+            <ul class="nav-menu-right">
+              <li><a href="#info">Доставка</a></li>
+              <li><a class="warranty-link" href="#info">Гарантия</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
@@ -113,7 +113,7 @@
             <div class="main-product-img">
               <img
                 src="img/slider-2.png"
-                widht="345"
+                width="345"
                 height="485"
                 alt="Фитнес браслет"
               />
@@ -167,7 +167,7 @@
             </div>
           </li>
         </ul>
-        <form action="">
+        <form action="https://echo.htmlacademy.ru">
           <input
             class="visually-hidden"
             type="radio"
@@ -330,7 +330,7 @@
               </div>
               <img
                 src="img/warranty.svg"
-                widht="171"
+                width="171"
                 height="194"
                 alt="Гарантия"
               />
@@ -490,12 +490,21 @@
     </div>
 
     <section class="popup-full-map hidden" id="popup-full-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.113418530659!2d37.528545115346965!3d55.687015860572735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1571057436321!5m2!1sru!2sru" width="960" height="559" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <h2 class="visually-hidden">Как нас найти на карте</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.113418530659!2d37.528545115346965!3d55.687015860572735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1571057436321!5m2!1sru!2sru"
+        width="960"
+        height="559"
+        style="border:0;"
+        allowfullscreen=""
+      ></iframe>
       <button id="close-map" class="close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
+
     <section id="popup-write-us" class="popup-write-us hidden">
+      <h2 class="visually-hidden">Напиши нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p class="client-name">
           <label for="client-name">Ваше имя:</label>
