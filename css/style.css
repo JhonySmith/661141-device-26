@@ -426,12 +426,21 @@
 .main-products p {
   margin-top: 19px;
   margin-bottom: 53px;
+  padding-right: 80px;
 
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   color: #464646;
+}
+
+.product-2 p {
+  padding-right: 119px;
+}
+
+.product-3 p {
+  padding-right: 100px;
 }
 
 .main-products a {
@@ -673,6 +682,8 @@ div.info-bg {
 }
 
 .info p {
+  padding-right: 10px;
+
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -1661,6 +1672,14 @@ a.active-sort {
   font-family: "Gilroy", "Tahoma", sans-serif;
   text-decoration: none;
   color: black;
+}
+
+.prof-selfi h3 {
+  width: 237px;
+}
+
+.followme-selfi h3 {
+  width: 260px;
 }
 
 .nav-button {
