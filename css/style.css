@@ -84,6 +84,15 @@
   margin: 0 auto;
 }
 
+main {
+  display: block;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 /*--------Header------------*/
 
 .logo {
@@ -346,7 +355,7 @@
   padding-top: 20px;
 }
 
-.drop-menu ul a {
+.drop-menu-list a {
   font-weight: 300;
   font-size: 15px;
   letter-spacing: 0.01em;
@@ -588,7 +597,7 @@
 
 /*--------Delivery, warranty, credit------------*/
 
-div.info-bg {
+.info-bg {
   background: linear-gradient(to bottom, white 26%, #e5e5e5 26%);
 }
 
@@ -843,11 +852,11 @@ section.contacts::before {
   padding-bottom: 65px;
 }
 
-.contacts span {
+.write-us-btn {
   display: inline-flex;
 }
 
-.contacts span a {
+.write-us-btn a {
   padding: 13px 37px 13px 41px;
 
   font-weight: 700;
@@ -869,11 +878,11 @@ section.contacts::before {
   );
 }
 
-.contacts span a:hover {
+.write-us-btn a:hover {
   background: #f0c52e;
 }
 
-.contacts span a:active {
+.write-us-btn a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1456,6 +1465,13 @@ a.active-sort {
   content: url("../img/checkbox-on.svg");
 }
 
+.filter-color input[type="checkbox"]:focus + label::before {
+  outline-color: rgb(77, 144, 254);
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
+}
+
 .filter-bth {
   padding-bottom: 20px;
 }
@@ -1483,6 +1499,13 @@ a.active-sort {
   margin-right: 15px;
 
   content: url("../img/radio-on.svg");
+}
+
+.filter-bth input[type="radio"]:focus + label::before {
+  outline-color: rgb(77, 144, 254);
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
 }
 
 .btn {
