@@ -217,9 +217,7 @@ body {
 
 .nav-official-right {
   display: flex;
-  justify-content: space-between;
-
-  max-width: 220px;
+  justify-content: flex-end;
 }
 
 .cart {
@@ -545,6 +543,7 @@ body {
 .groups-items {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   margin: 0;
   margin-top: 70px;
@@ -710,6 +709,7 @@ body {
 .brands ul {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   margin: 0;
   margin-top: 93px;
@@ -1546,6 +1546,10 @@ a.active-sort {
   display: flex;
 }
 
+.list-items {
+  width: 833px;
+}
+
 .list-items ul {
   display: flex;
   justify-content: flex-end;
@@ -1560,7 +1564,7 @@ a.active-sort {
   list-style: none;
 }
 
-.list-items li:nth-child(2n-1) {
+.item li:nth-child(2n-1) {
   padding-right: 40px;
 }
 
@@ -1947,10 +1951,10 @@ a.active-sort {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.hidden {
-  display: none !important;
-}
-
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
