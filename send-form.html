@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Форма отправки</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class="visually-hidden">Форма отправки</h1>
+    <section id="popup-write-us" class="popup-write-us">
+      <h2 class="visually-hidden">Напиши нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p class="client-name">
+          <label for="client-name">Ваше имя:</label>
+          <input
+            id="client-name"
+            type="text"
+            name="client-name"
+            placeholder="Имя Фамилия"
+            required
+          />
+        </p>
+        <p class="client-email">
+          <label for="client-email">Ваш e-mail:</label>
+          <input
+            id="client-email"
+            type="text"
+            name="client-email"
+            placeholder="email@example.com"
+            required
+          />
+        </p>
+        <p class="letter-text">
+          <label for="letter-text">Текст письма:</label>
+          <textarea
+            name="letter-text"
+            id="letter-text"
+            cols="30"
+            rows="10"
+            placeholder="В свободной форме"
+            required
+          ></textarea>
+        </p>
+        <button class="send" type="submit">Отправить</button>
+      </form>
+    </section>
+  </body>
+</html>

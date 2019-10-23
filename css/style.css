@@ -1408,6 +1408,10 @@ a.active-sort {
   margin-bottom: 1px;
 }
 
+.range-button:hover {
+  cursor: pointer;
+}
+
 .range-bar-point input {
   position: absolute;
   top: 100%;
@@ -1483,6 +1487,7 @@ a.active-sort {
 
 .filter-bth label:hover {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .filter-bth label:active {
@@ -1533,6 +1538,7 @@ a.active-sort {
 
 .btn:hover {
   background: #f0c52e;
+  cursor: pointer;
 }
 
 .content-container {
