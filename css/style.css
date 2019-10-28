@@ -602,6 +602,8 @@ main {
   margin-top: 64px;
 
   padding-bottom: 75px;
+
+  background: linear-gradient(to bottom, white 26%, #e5e5e5 26%);
 }
 
 .info form {
@@ -719,14 +721,28 @@ main {
 }
 
 .brands img {
-  filter: grayscale(100%);
-  filter: gray;
-  opacity: 0.2;
+  opacity: 0;
 }
 
 .brands img:hover {
   filter: none;
   opacity: 1;
+}
+
+.dji {
+  background: url("../img/logo-1-gray.png") no-repeat top;
+}
+
+.sp-gadgets {
+  background: url("../img/logo-2-gray.png") no-repeat top;
+}
+
+.gopro {
+  background: url("../img/logo-3-gray.png") no-repeat top;
+}
+
+.vive {
+  background: url("../img/logo-4-gray.png") no-repeat top;
 }
 
 /*--------About&Contacts------------*/
@@ -894,6 +910,8 @@ section.contacts::before {
   justify-content: space-between;
 
   padding-bottom: 80px;
+
+  background-color: #464646;
 }
 
 .footer-adress {
